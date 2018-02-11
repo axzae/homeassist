@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_webui"
+            android:icon="@drawable/ic_public_black_24dp"
+            android:title="@string/menu_webui"/>
+
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_map_black_24dp"
+            android:title="@string/menu_map"/>
+
+        <item
+            android:id="@+id/nav_logbook"
+            android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+            android:title="@string/menu_logbook"/>
+
+        <item
+            android:id="@+id/nav_ads"
+            android:icon="@drawable/ic_television_classic_black_24dp"
+            android:title="@string/menu_ads"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/nav_history"
+            android:enabled="false"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="@string/menu_history"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/menu_logout"/>
+
+    </group>
+    <item android:title="@string/groupmenu_application">
+        <menu>
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_help_black_24dp"
+                android:title="@string/menu_faq"/>
+
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/menu_settings"/>
+
+            <item
+                android:id="@+id/nav_bug_report"
+                android:icon="@drawable/ic_feedback_black_24dp"
+                android:title="@string/pref_bug_report"/>
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="@string/menu_recommend"
+                android:visible="false"/>
+        </menu>
+    </item>
+
+    <!--<item android:title="Communicate">-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_share"-->
+    <!--android:icon="@drawable/ic_share_black_24dp"-->
+    <!--android:title="Share"/>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_send"-->
+    <!--android:icon="@drawable/ic_send_black_24dp"-->
+    <!--android:title="Send"/>-->
+    <!--</menu>-->
+    <!--</item>-->
+</menu>

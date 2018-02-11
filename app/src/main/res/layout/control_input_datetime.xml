@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/layout_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?listPreferredItemHeightSmall"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:text="@string/label_date"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/text_date_value"
+                style="@style/Widget.AppCompat.Spinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+                android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                tools:text="2017-11-22"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?listPreferredItemHeightSmall"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:text="@string/label_time"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/text_time_value"
+                style="@style/Widget.AppCompat.Spinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+                android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                tools:text="12:34 PM"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        tools:ignore="RtlHardcoded">
+
+        <Button
+            android:id="@+id/button_close"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="72dp"
+            android:text="@string/button_close"
+            android:textColor="@color/md_blue_500"
+            app:layout_columnWeight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

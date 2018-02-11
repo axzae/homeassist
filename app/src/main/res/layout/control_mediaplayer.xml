@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical">
+
+    <com.axzae.homeassistant.view.FixedAspectRatioFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="16dp"
+        app:aspectRatioHeight="10"
+        app:aspectRatioWidth="16"
+        tools:ignore="RtlHardcoded">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/empty"/>
+
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:id="@+id/progressbar"
+            style="@style/Widget.MaterialProgressBar.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:mpb_progressStyle="circular"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_appname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="App Name"/>
+
+            <TextView
+                android:id="@+id/text_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="State"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/list_conn_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:ignore="UseCompoundDrawables">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/text_mdi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="\uF43B"
+                android:textColor="@color/md_grey_300"
+                android:textSize="164dp"
+                app:fontFamily="@font/mdi"
+                tools:ignore="HardcodedText,MissingPrefix,SpUsage"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/error_connection"
+                android:textSize="16sp"
+                android:tint="@color/md_grey_500"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_track_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/text_prev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="\uF4AE"
+                android:textColor="@color/md_blue_grey_500"
+                android:textSize="40dp"
+                app:fontFamily="@font/mdi"
+                tools:ignore="HardcodedText,MissingPrefix,SpUsage"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/text_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="\uF3E5"
+                android:textColor="@color/md_blue_grey_500"
+                android:textSize="40dp"
+                app:fontFamily="@font/mdi"
+                tools:ignore="HardcodedText,MissingPrefix,SpUsage"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/text_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="\uF40C"
+                android:textColor="@color/md_blue_grey_500"
+                android:textSize="40dp"
+                app:fontFamily="@font/mdi"
+                tools:ignore="HardcodedText,MissingPrefix,SpUsage"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/text_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="\uF4AD"
+                android:textColor="@color/md_blue_grey_500"
+                android:textSize="40dp"
+                app:fontFamily="@font/mdi"
+                tools:ignore="HardcodedText,MissingPrefix,SpUsage"/>
+
+        </LinearLayout>
+
+    </com.axzae.homeassistant.view.FixedAspectRatioFrameLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_volume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/text_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="\uF4AE"
+            android:textColor="@color/md_blue_grey_500"
+            android:textSize="24dp"
+            app:fontFamily="@font/mdi"
+            tools:ignore="HardcodedText,MissingPrefix,SpUsage"/>
+
+        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+            android:id="@+id/discrete_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:dsb_indicatorColor="@color/md_blue_500"
+            app:dsb_max="100"
+            app:dsb_min="0"
+            app:dsb_progressColor="@color/color_mdi_button"
+            app:dsb_rippleColor="@color/md_blue_100"
+            app:dsb_scrubberHeight="4dp"
+            app:dsb_thumbSize="16dp"
+            app:dsb_trackColor="@color/md_grey_400"
+            app:dsb_trackHeight="4dp"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/text_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="\uF425"
+                android:textColor="@color/color_mdi_button"
+                android:textSize="24dp"
+                app:fontFamily="@font/mdi"
+                tools:ignore="HardcodedText,MissingPrefix,SpUsage"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/text_speech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="\uF50A"
+                android:textColor="@color/color_mdi_button"
+                android:textSize="24dp"
+                app:fontFamily="@font/mdi"
+                tools:ignore="HardcodedText,MissingPrefix,SpUsage"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp"
+            tools:ignore="RtlHardcoded">
+
+            <Button
+                android:id="@+id/button_close"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="72dp"
+                android:text="@string/button_close"
+                android:textColor="@color/md_blue_500"
+                app:layout_columnWeight="1"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

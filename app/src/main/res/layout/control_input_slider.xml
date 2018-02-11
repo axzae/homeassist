@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+            android:id="@+id/discrete_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dsb_indicatorColor="@color/md_blue_500"
+            app:dsb_max="100"
+            app:dsb_min="0"
+            app:dsb_progressColor="@color/md_blue_500"
+            app:dsb_rippleColor="@color/md_blue_100"
+            app:dsb_scrubberHeight="4dp"
+            app:dsb_thumbSize="16dp"
+            app:dsb_trackColor="@color/md_grey_400"
+            app:dsb_trackHeight="4dp"/>
+
+        <TextView
+            android:id="@+id/text_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:ellipsize="marquee"
+            android:focusable="false"
+            android:fontFamily="sans-serif"
+            android:gravity="right"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="14sp"
+            tools:text="1024 MB"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        tools:ignore="RtlHardcoded">
+
+        <Button
+            android:visibility="visible"
+            android:id="@+id/button_reset"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="72dp"
+            android:text="@string/button_reset"
+            android:textColor="@color/md_blue_500"
+            app:layout_columnWeight="1"/>
+
+        <Button
+            android:id="@+id/button_close"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="72dp"
+            android:text="@string/button_close"
+            android:textColor="@color/md_blue_500"
+            app:layout_columnWeight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

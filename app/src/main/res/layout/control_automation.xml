@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="24dp">
+
+
+            <Button
+                android:id="@+id/button_trigger"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:theme="@style/Theme.Axzae.PrimaryAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="@string/button_trigger"
+                app:layout_columnWeight="1"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="24dp">
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:theme="@style/Theme.Axzae.PrimaryAccent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp"
+            tools:ignore="RtlHardcoded">
+
+            <Button
+                android:id="@+id/button_close"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="72dp"
+                android:text="@string/button_close"
+                android:textColor="@color/md_blue_500"
+                app:layout_columnWeight="1"/>
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

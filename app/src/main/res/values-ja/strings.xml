@@ -1,0 +1,165 @@
+<resources>
+    <string name="app_name">HomeAssist</string>
+    <string name="about_extra">HomeAssistは、関連会社と関係のない独立したアプリケーションです。このアプリケーションに記載されているすべての製品、ロゴおよび画像は、それぞれのブランドの所有物です。</string>
+
+    <string name="empty_dashboard">あなたのダッシュボードは空です</string>
+
+    <string name="title_changelog">変更履歴</string>
+    <string name="title_app_info">アプリ情報</string>
+    <string name="title_about">HomeAssistについて</string>
+    <string name="title_dashboard">ダッシュボード</string>
+    <string name="title_home">ホーム</string>
+    <string name="title_edit">ダッシュボードを編集</string>
+    <string name="title_notifications">通知</string>
+    <string name="title_whats_new">最新情報</string>
+    <string name="title_additem">アイテムを追加</string>
+    <string name="title_send_crash_report">障害のレポートを送信しますか？</string>
+    <string name="title_save_changes">変更を保存しますか？</string>
+    <string name="title_saving_error">エラーを保存しています</string>
+
+    <string name="action_cancel">キャンセル</string>
+    <string name="action_changelog">変更履歴</string>
+    <string name="action_clear_search">検索をクリア</string>
+    <string name="action_save">保存</string>
+    <string name="action_discard">破棄</string>
+    <string name="action_dismiss">解除</string>
+    <string name="action_done">完了</string>
+    <string name="action_delete">削除</string>
+    <string name="action_gotit">了解!</string>
+    <string name="action_logout">ログアウト</string>
+    <string name="action_ok">OK</string>
+    <string name="action_yes">はい</string>
+    <string name="action_no">いいえ</string>
+    <string name="action_remove">削除</string>
+    <string name="action_report">レポート</string>
+    <string name="action_retry">リトライ</string>
+    <string name="action_set">設定</string>
+    <string name="action_send">送信</string>
+    <string name="action_dont_send_report">送信しない</string>
+    <string name="action_send_report">レポートを送信</string>
+    <string name="action_disconnect">切断</string>
+
+    <string name="message_attach_bootstrap">サーバーの設定ファイルを添付しますか？</string>
+    <string name="message_crash_report">HomeAssistはHA bootstrapデータの解析に問題があります。この障害を開発者にメールで通知しますか？</string>
+    <string name="message_recommendation">HomeAssistのアプリを見てください： %1$s</string>
+    <string name="message_remove">%1$sを削除しますか？</string>
+    <string name="message_signout">%1$sをログアウトしますか？</string>
+
+    <string name="menu_about">アバウト</string>
+    <string name="menu_add">追加</string>
+    <string name="menu_add_default">デフォルトを追加</string>
+    <string name="menu_cancel">キャンセル</string>
+    <string name="menu_clear_search">検索をクリア</string>
+    <string name="menu_conn_info">接続情報</string>
+    <string name="menu_done">完了</string>
+    <string name="menu_edit">編集</string>
+    <string name="menu_edit_mode">ダッシュボードを編集</string>
+    <string name="menu_help">ヘルプ</string>
+    <string name="menu_logout">ログアウト</string>
+    <string name="menu_privacy_policy">個人情報保護方針</string>
+    <string name="menu_refresh">更新</string>
+    <string name="menu_remove_all">すべてを削除</string>
+    <string name="menu_save">保存</string>
+    <string name="menu_search">検索</string>
+    <string name="menu_settings">設定</string>
+    <string name="menu_sort">並び替え</string>
+    <string name="menu_switch">ログアウト</string>
+    <string name="menu_webui">Web UIを読み込む</string>
+    <string name="menu_open_in_browser">ブラウザで開く</string>
+    <string name="menu_logbook">ログブック</string>
+    <string name="menu_history">履歴</string>
+    <string name="menu_faq">FAQs</string>
+    <string name="menu_recommend">友達に推薦する</string>
+    <string name="menu_hoursand">データベース混雑中</string>
+    <string name="menu_select">選択</string>
+
+    <string name="progress_saving">保存しています...</string>
+    <string name="progress_wait">暫くお待ちください...</string>
+    <string name="progress_initializing">初期化中...</string>
+    <string name="progress_connecting">接続中…</string>
+    <string name="progress_bootstrapping">ブートストラップしています...</string>
+    <string name="progress_starting">起動中...</string>
+
+    <string name="error_invalid_password">無効なパスワード</string>
+    <string name="error_field_required">この項目は必須です</string>
+    <string name="error_corrupted">アプリが破損している</string>
+    <string name="error_no_graph">グラフがありません</string>
+    <string name="error_connection">接続エラー</string>
+
+    <string name="button_cancel">キャンセル</string>
+    <string name="button_set">設定</string>
+    <string name="button_connect">接続</string>
+    <string name="button_edit_dashboard">ダッシュボードを編集</string>
+    <string name="button_close">閉じる</string>
+    <string name="button_speak">話す</string>
+    <string name="button_reset">リセット</string>
+    <string name="button_trigger">トリガー</string>
+
+    <string name="toast_refreshed">更新された</string>
+    <string name="toast_triggered">トリガされた</string>
+    <string name="toast_noaction">何もしなかった</string>
+    <string name="toast_saved">保存された</string>
+
+    <string name="prompt_ipaddress">ベースURL：（例：http://192.168.2.1:8123）</string>
+    <string name="prompt_password">パスワード</string>
+
+    <string name="optional">(任意)</string>
+
+    <string name="tutorial_title_add">コントロールを追加</string>
+    <string name="tutorial_title_sort">コントロールを並べ替え</string>
+    <string name="tutorial_title_remove">コントロールを削除</string>
+    <string name="tutorial_title_save">作業内容を保存</string>
+    <string name="tutorial_desc_add">新しいコントロールを追加するには、ここをタップしてください。</string>
+    <string name="tutorial_desc_sort">既存のコントロールを移動するには1秒間押し続けます。</string>
+    <string name="tutorial_desc_remove">タップして既存のコントロールを削除できます。</string>
+    <string name="tutorial_desc_save">このボタンをタップすると、すべての変更が保存され、ダッシュボードに戻ることができます。</string>
+
+    <string name="pref_category_settings">設定</string>
+    <string name="pref_column_entries">列の数</string>
+    <string name="pref_column_entries_desc">大きなタイル画面に調整します</string>
+    <string name="pref_sound_effect">効果音</string>
+    <string name="pref_sound_effect_desc">クリック音を切り替える</string>
+    <string name="pref_push_notification">プッシュ通知</string>
+    <string name="pref_push_notification_desc">HomeAssistはこのデバイスに警告を送信できるようにします。</string>
+    <string name="pref_websocket_mode">WebSocketモード</string>
+    <string name="pref_websocket_mode_desc">アプリを起動するに連れて、WebSocketが開きます。これを有効にすると、HAサーバーでのデータポーリングが可能になります。再起動が必要です。</string>
+    <string name="pref_test_push_notification">プッシュ通知を試す</string>
+    <string name="pref_test_push_notification_desc">このデバイスでプッシュ通知が正常に機能しているかどうかをテストするには、ここにタップしてください。</string>
+    <string name="pref_category_application">アプリケーション</string>
+    <string name="pref_app_version">アプリバージョン</string>
+    <string name="pref_build">ビルド</string>
+    <string name="pref_oss_license">Open Source Licenses</string>
+    <string name="pref_changelog">変更履歴</string>
+    <string name="pref_bug_report">不具合を報告</string>
+    <string name="pref_about">HomeAssistについて</string>
+
+    <string name="about_designed_by">設計者と開発者は</string>
+    <string name="about_contributors">貢や献者</string>
+    <string name="about_suggestions_improvements">提案改善点：</string>
+    <string name="about_feedbacks_ratings">フィードバックや評価：</string>
+    <string name="title_send_email">メールを送信</string>
+    <string name="error_invalid_ha_server">無効なHAサーバー</string>
+    <string name="sort_order">順序</string>
+    <string name="sort_name">名前</string>
+    <string name="sort_group">グループ</string>
+
+    <string name="sorted_order">注文順</string>
+    <string name="sorted_name">名前順</string>
+    <string name="sorted_group">グループ順</string>
+
+    <string name="option_auto">自動</string>
+    <string name="exception_connect">コネクションタイムアウトが発生しました。</string>
+    <string name="exception_sockettimeout">ソケットタイムアウトが発生しました。</string>
+    <string name="exception_unknownhost">未知のホスト</string>
+    <string name="exception_socket">ソケットエラー</string>
+    <string name="exception_jsonsyntax">データ構文エラー</string>
+    <string name="notification_websocket_title">WebSocketが動作しています</string>
+    <string name="toast_websocket_running">WebSocketはすでに実行中です</string>
+    <string name="groupmenu_application">アプリケーション</string>
+
+    <string name="navigation_drawer_open">引き出しを開く</string>
+    <string name="navigation_drawer_close">引き出しを閉じる</string>
+    <string name="menu_ads">広告を見る</string>
+
+
+</resources>

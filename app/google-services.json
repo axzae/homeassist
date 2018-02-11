@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "855516953680",
+    "firebase_url": "https://homeassistant-axzae.firebaseio.com",
+    "project_id": "homeassistant-axzae",
+    "storage_bucket": "homeassistant-axzae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855516953680:android:a424d94f17a155d0",
+        "android_client_info": {
+          "package_name": "com.axzae.homeassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855516953680-tfa3c5d2ucutigken5fk9feqkjedqoqg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.axzae.homeassistant",
+            "certificate_hash": "46d78a4c551317d634073240354bd1c87532e0e2"
+          }
+        },
+        {
+          "client_id": "855516953680-o7se0dv4atngvqf97ij7u4562j5u0b5t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.axzae.homeassistant",
+            "certificate_hash": "9755c78ffb36ff452a21870147b0ddab164fc40d"
+          }
+        },
+        {
+          "client_id": "855516953680-d6tdir9h42u2tj6usl8ppaf7hnnqm8ek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyo_kFMx74FVu1KPT97A7HTB_A-X56lFc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855516953680-d6tdir9h42u2tj6usl8ppaf7hnnqm8ek.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

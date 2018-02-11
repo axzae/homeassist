@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="16dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/text_mdi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="1dp"
+                android:gravity="center"
+                android:lines="1"
+                android:textColor="@color/md_blue_grey_500"
+                android:textSize="24dp"
+                android:textStyle="normal"
+                app:fontFamily="@font/mdi"
+                tools:ignore="MissingPrefix,SpUsage"
+                tools:text="\uF2FD"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="marquee"
+                android:focusable="false"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingBottom="2dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/md_grey_800"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                tools:text="Input with both date and time this is a long shittext"/>
+
+            <TextView
+                android:id="@+id/sub_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="marquee"
+                android:focusable="false"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:visibility="gone"
+                tools:text="3% of data used"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/control_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:paddingLeft="8dp"/>
+
+            <Button
+                android:id="@+id/control_button"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:ellipsize="marquee"
+                android:focusable="false"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="0dp"
+                android:text="ACTIVATE"
+                android:textSize="14sp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/control_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:paddingRight="8dp"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="14sp"
+                tools:text="Random"/>
+
+
+            <LinearLayout
+                android:id="@+id/layout_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/text_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="\uF243"
+                    android:textColor="@color/color_switch"
+                    android:textSize="24dp"
+                    app:fontFamily="@font/mdi"
+                    tools:ignore="HardcodedText,MissingPrefix,SpUsage"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/text_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="\uF241"
+                    android:textColor="@color/color_switch"
+                    android:textSize="24dp"
+                    app:fontFamily="@font/mdi"
+                    tools:ignore="HardcodedText,MissingPrefix,SpUsage"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_cover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/text_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="\uF05D"
+                    android:textColor="@color/color_cover"
+                    android:textSize="24dp"
+                    app:fontFamily="@font/mdi"
+                    tools:ignore="HardcodedText,MissingPrefix,SpUsage"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/text_stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="\uF4DB"
+                    android:textColor="@color/color_cover"
+                    android:textSize="24dp"
+                    app:fontFamily="@font/mdi"
+                    tools:ignore="HardcodedText,MissingPrefix,SpUsage"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/text_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="\uF045"
+                    android:textColor="@color/color_cover"
+                    android:textSize="24dp"
+                    app:fontFamily="@font/mdi"
+                    tools:ignore="HardcodedText,MissingPrefix,SpUsage"/>
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

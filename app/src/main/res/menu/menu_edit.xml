@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_help"
+        android:icon="@drawable/ic_help_outline_black_24dp"
+        android:orderInCategory="1"
+        android:title="@string/menu_help"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_save"
+        android:orderInCategory="2"
+        android:title="@string/menu_save"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_remove_all"
+        android:orderInCategory="2"
+        android:title="@string/menu_remove_all"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_add_default"
+        android:orderInCategory="3"
+        android:title="@string/menu_add_default"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_remove_dashboard"
+        android:orderInCategory="4"
+        android:title="@string/menu_remove_dashboard"
+        android:visible="false"
+        app:showAsAction="never"/>
+
+</menu>

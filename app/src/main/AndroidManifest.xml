@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.axzae.homeassistant">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Axzae">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+
+        <activity
+            android:name=".ConnectActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Axzae.Inverse"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.Axzae.Main"/>
+
+        <activity
+            android:name=".EntityActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".EditActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Axzae.EditTheme"/>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".LibraryActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".ChangelogActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".WikiActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".LogbookActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".TransparentActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.Transparent">
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="7f69c0c5457d23a9e7e80d4e75fa42ecbbd16837"/>
+
+        <provider
+            android:name=".provider.EntityContentProvider"
+            android:authorities="com.axzae.homeassistant.provider.EntityContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".provider.DummyContentProvider"
+            android:authorities="com.axzae.homeassistant.provider.DummyContentProvider"
+            android:exported="false"/>
+
+        <receiver android:name=".provider.EntityWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/entity_widget_info"/>
+        </receiver>
+
+        <receiver
+            android:name=".service.DataSyncService$TerminateConnectionReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="TERMINATE_CONNECTION"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".WidgetConfigActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".GroupActivity"/>
+        <activity android:name=".MapActivity"/>
+
+        <!--<service-->
+        <!--android:name=".service.HaFirebaseMessagingService">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.google.firebase.MESSAGING_EVENT"/>-->
+        <!--</intent-filter>-->
+        <!--</service>-->
+
+        <!--<service-->
+        <!--android:name=".service.HaFirebaseInstanceIDService">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>-->
+        <!--</intent-filter>-->
+        <!--</service>-->
+
+        <service android:name=".service.DataSyncService"/>
+
+
+    </application>
+
+</manifest>

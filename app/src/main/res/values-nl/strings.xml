@@ -1,0 +1,163 @@
+<resources>
+    <string name="app_name">HomeAssist</string>
+    <string name="about_extra">HomeAssist is een volledig onafhankelijke applicatie, niet gerelateerd aan een specifiek bedrijf. Alle producten, merken, logos en afbeeldingen in deze applicatie zijn eigendom van de betreffende bedrijven.</string>
+
+    <string name="empty_dashboard">Leeg paneel</string>
+    <string name="title_changelog">Logboek</string>
+    <string name="title_app_info">App Info</string>
+    <string name="title_about">Over HomeAssist</string>
+    <string name="title_dashboard">Paneel</string>
+    <string name="title_home">Home</string>
+    <string name="title_edit">Wijzigen</string>
+    <string name="title_notifications">Notificaties</string>
+    <string name="title_whats_new">Wijzigingen</string>
+    <string name="title_additem">Item toevoegen</string>
+    <string name="title_send_crash_report">Crash Report sturen?</string>
+    <string name="title_save_changes">Wijzigingen opslaan?</string>
+    <string name="title_saving_error">Foutmelding opslaan</string>
+
+    <string name="action_cancel">Annuleren</string>
+    <string name="action_changelog">Logboek</string>
+    <string name="action_clear_search">Nieuwe zoekopdracht</string>
+    <string name="action_save">Opslaan</string>
+    <string name="action_discard">Terugdraaien</string>
+    <string name="action_dismiss">Negeren</string>
+    <string name="action_done">Klaar</string>
+    <string name="action_delete">Verwijderen</string>
+    <string name="action_gotit">Begrepen</string>
+    <string name="action_logout">Uitloggen</string>
+    <string name="action_ok">OK</string>
+    <string name="action_yes">Ja</string>
+    <string name="action_no">Nee</string>
+    <string name="action_remove">Verwijder</string>
+    <string name="action_report">Verslag</string>
+    <string name="action_retry">Opnieuw</string>
+    <string name="action_set">Instellen</string>
+    <string name="action_send">Versturen</string>
+    <string name="action_dont_send_report">Niet sturen</string>
+    <string name="action_send_report">Verzend verslag</string>
+    <string name="action_disconnect">Ontkoppel</string>
+
+    <string name="message_attach_bootstrap">Wil je het bootstrap.json bestand toevoegen?</string>
+    <string name="message_crash_report">HomeAssist kan het HA bootstrap bestand niet interpreteren. Wil je dit probleem emailen naar de ontwikkelaar?</string>
+    <string name="message_recommendation">Probeer de HomeAssist android app via: %1$s</string>
+    <string name="message_remove">Verwijder %1$s ?</string>
+    <string name="message_signout">Uitloggen bij %1$s ?</string>
+
+    <string name="menu_about">Over</string>
+    <string name="menu_add">Toevoegen</string>
+    <string name="menu_add_default">Standaard toevoegen</string>
+    <string name="menu_cancel">Annuleren</string>
+    <string name="menu_clear_search">Nieuwe zoekopdracht</string>
+    <string name="menu_conn_info">Connectie informatie</string>
+    <string name="menu_done">Klaar</string>
+    <string name="menu_edit">Wijzig</string>
+    <string name="menu_edit_mode">Wijzig Paneel</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_logout">Uitloggen</string>
+    <string name="menu_privacy_policy">Privacy Policy</string>
+    <string name="menu_refresh">Verversen</string>
+    <string name="menu_remove_all">Alles verwijderen</string>
+    <string name="menu_save">Opslaan</string>
+    <string name="menu_search">Zoek</string>
+    <string name="menu_settings">Instellingen</string>
+    <string name="menu_sort">Sorteer</string>
+    <string name="menu_switch">Uitloggen</string>
+    <string name="menu_webui">Web versie</string>
+    <string name="menu_open_in_browser">Open in browser</string>
+    <string name="menu_logbook">Logboek</string>
+    <string name="menu_history">Geschiedenis</string>
+    <string name="menu_faq">Veel gestelde vragen</string>
+    <string name="menu_recommend">Aanbevelen bij vrienden</string>
+    <string name="menu_hoursand">Database bezet</string>
+    <string name="menu_select">Selecteer</string>
+
+    <string name="progress_saving">Opslaan…</string>
+    <string name="progress_wait">Moment…</string>
+    <string name="progress_initializing">Initialiseren…</string>
+    <string name="progress_connecting">Connecteren…</string>
+    <string name="progress_bootstrapping">Voorbereiden…</string>
+    <string name="progress_starting">Opstarten…</string>
+
+    <string name="error_invalid_password">Ongeldig wachtwoord</string>
+    <string name="error_field_required">Dit veld is verplicht</string>
+    <string name="error_corrupted">De applicatie is defect</string>
+    <string name="error_no_graph">Geen grafiek beschikbaar</string>
+    <string name="error_connection">Verbindingsfout</string>
+
+    <string name="button_cancel">Annuleren</string>
+    <string name="button_set">Instellen</string>
+    <string name="button_connect">Verbinden</string>
+    <string name="button_edit_dashboard">Wijzig paneel</string>
+    <string name="button_close">Sluiten</string>
+    <string name="button_speak">Spreken</string>
+    <string name="button_reset">Reset</string>
+    <string name="button_trigger">Activeer</string>
+
+    <string name="toast_refreshed">Ververst</string>
+    <string name="toast_triggered">Geactiveerd</string>
+    <string name="toast_noaction">Geen actie</string>
+    <string name="toast_saved">Opgeslagen</string>
+
+    <string name="prompt_ipaddress">Basis URL: (bijvoorbeeld: http://192.168.2.1:8123)</string>
+    <string name="prompt_password">Wachtwoord</string>
+
+    <string name="optional">(Optioneel)</string>
+
+    <string name="tutorial_title_add">Element toevoegen</string>
+    <string name="tutorial_title_sort">Elementen sorteren</string>
+    <string name="tutorial_title_remove">Element verwijderen</string>
+    <string name="tutorial_title_save">Wijzigingen opslaan</string>
+    <string name="tutorial_desc_add">Klik hier om een nieuw element toe te voegen.</string>
+    <string name="tutorial_desc_sort">Houd een seconde ingedrukt om elementen te verplaatsen.</string>
+    <string name="tutorial_desc_remove">Klik om element te verwijderen.</string>
+    <string name="tutorial_desc_save">Klik hier om wijzigingen op te staan en terug te keren naar het paneel.</string>
+
+    <string name="pref_category_settings">Instellingen</string>
+    <string name="pref_column_entries">Aantal kolommen</string>
+    <string name="pref_column_entries_desc">Wijzig dit om grotere elementen op het scherm te krijgen</string>
+    <string name="pref_sound_effect">Geluidseffecten</string>
+    <string name="pref_sound_effect_desc">Klikgeuiden aan/uit</string>
+    <string name="pref_push_notification">Push Notificatie</string>
+    <string name="pref_push_notification_desc">Sta HomeAssist toe om notificaties naar dit apparaat te sturen.</string>
+    <string name="pref_websocket_mode">WebSocket modus</string>
+    <string name="pref_websocket_mode_desc">Start WebSocket automatisch om gegevens uit te wisselen met de HA server. Vereist een herstart.</string>
+    <string name="pref_test_push_notification">Test notificatie</string>
+    <string name="pref_test_push_notification_desc">Test of push notificatie goed werkt op dit apparaat.</string>
+    <string name="pref_category_application">Applicatie</string>
+    <string name="pref_app_version">Versie</string>
+    <string name="pref_build">Build</string>
+    <string name="pref_oss_license">Open Source Licenties</string>
+    <string name="pref_changelog">Laatste wijzigingen</string>
+    <string name="pref_bug_report">Bug melden</string>
+    <string name="pref_about">Over HomeAssist</string>
+
+    <string name="about_designed_by">Ontworpen en ontwikkeld door</string>
+    <string name="about_contributors">Bijdragers:</string>
+    <string name="about_suggestions_improvements">Suggesties / Verbeteringen:</string>
+    <string name="about_feedbacks_ratings">Feedback / Waarderingen:</string>
+    <string name="title_send_email">Stuur email</string>
+    <string name="error_invalid_ha_server">Incorrecte HA Server</string>
+    <string name="sort_order">Volgorde</string>
+    <string name="sort_name">Naam</string>
+    <string name="sort_group">Groep</string>
+
+    <string name="sorted_order">Gesorteert op volgorde</string>
+    <string name="sorted_name">Gesorteert op naam</string>
+    <string name="sorted_group">Gesorteert op groep</string>
+
+    <string name="option_auto">Auto</string>
+    <string name="exception_connect">Connectie timeout</string>
+    <string name="exception_sockettimeout">Socket timeout</string>
+    <string name="exception_unknownhost">Onbekende host</string>
+    <string name="exception_socket">Socket fout</string>
+    <string name="exception_jsonsyntax">Data Syntax fout</string>
+    <string name="notification_websocket_title">WebSocket is aan</string>
+    <string name="toast_websocket_running">WebSocket is al aan</string>
+    <string name="groupmenu_application">Applicatie</string>
+
+    <string name="navigation_drawer_open">Open navigatie</string>
+    <string name="navigation_drawer_close">Sluit navigatie</string>
+
+
+</resources>

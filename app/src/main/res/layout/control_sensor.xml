@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.axzae.homeassistant.view.FixedAspectRatioFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="@color/md_white_1000"
+    android:paddingBottom="24dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="24dp"
+    android:visibility="visible"
+    app:aspectRatioHeight="1"
+    app:aspectRatioWidth="1"
+    tools:ignore="RtlHardcoded">
+
+    <LinearLayout
+        android:id="@+id/list_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        tools:ignore="UseCompoundDrawables">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="\uF126"
+            android:textColor="@color/md_grey_300"
+            android:textSize="164dp"
+            app:fontFamily="@font/mdi"
+            tools:ignore="HardcodedText,MissingPrefix,SpUsage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/error_no_graph"
+            android:textSize="16sp"
+            android:tint="@color/md_grey_500"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_conn_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        tools:ignore="UseCompoundDrawables">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/text_mdi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="\uF43B"
+            android:textColor="@color/md_grey_300"
+            android:textSize="164dp"
+            app:fontFamily="@font/mdi"
+            tools:ignore="HardcodedText,MissingPrefix,SpUsage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/error_connection"
+            android:textSize="16sp"
+            android:tint="@color/md_grey_500"/>
+
+    </LinearLayout>
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="16dp"
+        android:visibility="invisible"/>
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/progressbar"
+        style="@style/Widget.MaterialProgressBar.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:mpb_progressStyle="circular"/>
+
+</com.axzae.homeassistant.view.FixedAspectRatioFrameLayout>
+

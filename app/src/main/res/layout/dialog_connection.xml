@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="24dp">
+
+            <com.axzae.homeassistant.view.MaterialEditText
+                android:id="@+id/text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/app_name"
+                android:imeOptions="actionNext"
+                android:inputType="textUri"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/text_password"
+                app:met_errorColor="@color/md_red_A200"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelAlwaysShown="true"
+                app:met_floatingLabelText="@string/prompt_connection_name"
+                tools:ignore="RtlHardcoded">
+
+                <requestFocus/>
+            </com.axzae.homeassistant.view.MaterialEditText>
+
+            <com.axzae.homeassistant.view.MaterialEditText
+                android:id="@+id/text_ipaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/hint_baseurl"
+                android:imeOptions="actionNext"
+                android:inputType="textUri"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/text_password"
+                app:met_errorColor="@color/md_red_A200"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelAlwaysShown="true"
+                app:met_floatingLabelText="@string/prompt_ipaddress"
+                tools:ignore="RtlHardcoded">
+
+            </com.axzae.homeassistant.view.MaterialEditText>
+
+            <com.axzae.homeassistant.view.MaterialEditText
+                android:id="@+id/text_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/optional"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                app:met_errorColor="@color/md_red_A200"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelAlwaysShown="true"
+                app:met_floatingLabelText="@string/prompt_password"
+                tools:ignore="RtlHardcoded">
+
+            </com.axzae.homeassistant.view.MaterialEditText>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        tools:ignore="RtlHardcoded">
+
+        <Button
+            android:id="@+id/button_cancel"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="72dp"
+            android:text="@string/button_cancel"
+            android:textColor="@color/md_blue_500"
+            app:layout_columnWeight="1"/>
+
+        <Button
+            android:id="@+id/button_add"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="72dp"
+            android:text="@string/menu_add"
+            android:textColor="@color/md_blue_500"
+            app:layout_columnWeight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

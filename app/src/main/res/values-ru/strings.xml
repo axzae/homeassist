@@ -1,0 +1,169 @@
+<resources>
+    <string name="app_name">HomeAssist</string>
+    <string name="about_extra">HomeAssist является независимым приложением, которое не связано ни с каким третьим лицом. Все продукты, логотипы и изображения, упомянутые в этом приложении, являются собственностью их соответствующего бренда.</string>
+
+    <string name="title_changelog">Журнал изменений</string>
+    <string name="title_app_info">О приложении</string>
+    <string name="title_about">О HomeAssist</string>
+    <string name="title_dashboard">Управление</string>
+    <string name="title_home">Главная</string>
+    <string name="title_edit">Редактировать панель управления</string>
+    <string name="title_notifications">Уведомления</string>
+    <string name="title_whats_new">Что нового?</string>
+    <string name="title_additem">Добавить элемент</string>
+
+    <string name="action_cancel">Отмена</string>
+    <string name="action_changelog">Журнал изменений</string>
+    <string name="action_save">Сохранить</string>
+    <string name="action_discard">Сбросить</string>
+    <string name="action_dismiss">Закрыть</string>
+    <string name="action_done">Готово</string>
+    <string name="action_delete">Удалить</string>
+    <string name="action_gotit">Получен</string>
+    <string name="action_logout">Выход</string>
+    <string name="action_ok">OK</string>
+    <string name="action_remove">Очистить</string>
+    <string name="action_retry">Повторить</string>
+    <string name="action_set">Выбрать</string>
+
+    <string name="message_signout">Выйти из %1$s ?</string>
+    <string name="message_remove">Удалить %1$s ?</string>
+
+    <string name="menu_about">Инфо</string>
+    <string name="menu_add">Добавить</string>
+    <string name="menu_add_default">Добавить все</string>
+    <string name="menu_cancel">Отмена</string>
+    <string name="menu_conn_info">Информация о соединении</string>
+    <string name="menu_done">Готово</string>
+    <string name="menu_edit">Редактировать</string>
+    <string name="menu_edit_mode">Редактировать панель</string>
+    <string name="menu_help">Помощь</string>
+    <string name="menu_logout">Выход</string>
+    <string name="menu_privacy_policy">Политика конфиденциальности</string>
+    <string name="menu_refresh">Обновить</string>
+    <string name="menu_remove_all">Удалить все</string>
+    <string name="menu_search">Поиск</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="menu_sort">Сортировать</string>
+    <string name="menu_switch">Выход</string>
+    <string name="menu_webui">Открыть в браузере</string>
+
+    <string name="pref_column_entries_desc">Изменить отображение плиток</string>
+    <string name="pref_sound_effect_desc">Вкл/выкл звуковые эффекты</string>
+    <string name="pref_push_notification">Разрешить HomeAssist отправлять push-уведомления.</string>
+    <string name="pref_test_push_notification">Нажмите чтобы проверить правильность работы push-уведомления на этом устройстве.</string>
+
+    <string name="progress_saving">Сохранение…</string>
+    <string name="progress_wait">Пожалуйста, подождите……</string>
+    <string name="progress_initializing">Выполняется инициализация…</string>
+    <string name="progress_connecting">Подключение…</string>
+    <string name="progress_bootstrapping">Начальная загрузка…</string>
+    <string name="progress_starting">Запуск…</string>
+
+    <string name="error_invalid_password">Неверный пароль</string>
+    <string name="error_field_required">Обязательное поле</string>
+    <string name="error_corrupted">Приложение повреждено</string>
+    <string name="error_no_graph">График отсутствует</string>
+    <string name="error_connection">Ошибка подключения</string>
+
+    <string name="button_cancel">Отмена</string>
+    <string name="button_set">Выбрать</string>
+    <string name="button_connect">Подключиться</string>
+
+    <string name="toast_refreshed">Обновить</string>
+    <string name="toast_triggered">Активировать</string>
+
+    <string name="prompt_ipaddress">Стандартный адрес: (пример: http://192.168.2.1:8123)</string>
+    <string name="prompt_password">Пароль</string>
+
+    <string name="optional">(По выбору)</string>
+
+    <string name="title_send_crash_report">Отправить отчет об ошибке?</string>
+    <string name="title_save_changes">Сохранить изменения?</string>
+    <string name="title_send_email">Отправить по электронной почте</string>
+    <string name="empty_dashboard">Панель управления пуста</string>
+
+    <string name="action_clear_search">Очистить поиск</string>
+    <string name="action_report">Отчет</string>
+    <string name="action_dont_send_report">Невозможно отправить отчет</string>
+    <string name="action_send">Отправлен</string>
+    <string name="action_send_report">Отправить отчет</string>
+
+    <string name="message_crash_report">Возникли проблемы с получением данных из твоего HomeAssist. Хотели бы вы пожаловаться разработчику?</string>
+    <string name="menu_clear_search">Очистить поиск</string>
+    <string name="menu_save">Сохранить</string>
+    <string name="button_edit_dashboard">Редактировать панель управления</string>
+    <string name="tutorial_title_sort">Сортировка панели</string>
+    <string name="tutorial_title_add">Добавить на панель</string>
+    <string name="tutorial_title_save">Сохранить изменение панели</string>
+    <string name="tutorial_title_remove">Удалить с панели</string>
+    <string name="tutorial_desc_sort">Удерживайте в течение пары секунд, чтобы переместить существующие элемент.</string>
+    <string name="tutorial_desc_add">Нажмите здесь, чтобы добавить новый элемент управления.</string>
+    <string name="tutorial_desc_remove">Нажмите, чтобы удалить существующий элемент управления.</string>
+    <string name="tutorial_desc_save">Нажмите эту кнопку, чтобы сохранить изменения и вернуться к панели управления.</string>
+    <string name="pref_category_settings">Параметры</string>
+    <string name="pref_column_entries">Количество столбцов</string>
+    <string name="pref_sound_effect">Звуковые эффекты</string>
+    <string name="pref_push_notification_desc">Разрешить HomeAssist отправлять push-уведомления на устройство.</string>
+    <string name="pref_test_push_notification_desc">Нажмите чтобы проверить правильность работы push-уведомления на этом устройстве.</string>
+    <string name="pref_category_application">Приложение</string>
+    <string name="pref_app_version">Версия приложения</string>
+    <string name="pref_build">Сборка</string>
+    <string name="pref_changelog">Список изменений</string>
+    <string name="pref_oss_license">Лицензии Open Source</string>
+    <string name="pref_bug_report">Отчет об ошибке</string>
+    <string name="pref_about">Информация о HomeAssist</string>
+    <string name="about_designed_by">Дизайн и Разработку сделал</string>
+    <string name="about_contributors">Участники:</string>
+    <string name="about_suggestions_improvements">Предложения и Улучшения:</string>
+    <string name="about_feedbacks_ratings">Отзывы и Рейтинги:</string>
+    <string name="error_invalid_ha_server">Неверный сервер HA</string>
+    <string name="sort_name">Сортировать по имени</string>
+    <string name="sort_order">Сортировать самостоятельно</string>
+    <string name="sort_group">Сортировать по группам</string>
+
+    <string name="option_auto">Авто</string>
+    <string name="exception_connect">Тайм-аут соединения</string>
+    <string name="exception_sockettimeout">Socket ожидание</string>
+    <string name="exception_unknownhost">Неизвестный хост</string>
+    <string name="exception_socket">Socket ошибка</string>
+    <string name="exception_jsonsyntax">Ошибка данных json</string>
+    <string name="menu_hoursand">База данных занята</string>
+    <string name="sorted_order">Отсортированы вручную</string>
+    <string name="sorted_name">Отсортированы по имени</string>
+    <string name="sorted_group">Отсортированы по группам</string>
+
+    <string name="message_attach_bootstrap">Прикрепить bootstrap.json файл?</string>
+    <string name="action_no">Нет</string>
+    <string name="action_yes">Да</string>
+    <string name="menu_select">Выбрать</string>
+    <string name="title_saving_error">Ошибка сохранения</string>
+    <string name="toast_saved">Сохранены</string>
+    <string name="button_trigger">Триггер</string>
+    <string name="pref_websocket_mode">Режим WebSocket</string>
+    <string name="pref_websocket_mode_desc">Использовать WebSocket. Включение позволит получать данные с HA сервера. Требуется перезапуск.</string>
+    <string name="notification_websocket_title">WebSocket работает</string>
+    <string name="action_disconnect">Отсоединить</string>
+    <string name="toast_websocket_running">WebSocket уже работает</string>
+    <string name="groupmenu_application">Приложение</string>
+    <string name="navigation_drawer_open">Открыть Drawer</string>
+    <string name="navigation_drawer_close">Закрыть Drawer</string>
+    <string name="menu_open_in_browser">Открыть в браузере</string>
+    <string name="menu_logbook">Журнал</string>
+    <string name="menu_history">История</string>
+    <string name="menu_faq">FAQ</string>
+    <string name="menu_recommend">Рекомендовать друзьям</string>
+    <string name="message_recommendation">Проверь Android приложение на HomeAssist: %1$s</string>
+    <string name="label_time">Time</string>
+    <string name="label_date">Date</string>
+    <string name="menu_remove_dashboard">Remove Dashboard</string>
+    <string name="error_invalid_baseurl">Invalid BaseURL</string>
+    <string name="title_add_connection">Add Connection</string>
+    <string name="label_target_temperature">Target Temperature</string>
+    <string name="label_current_temperature">Current Temperature</string>
+    <string name="prompt_connection_name">Connection Name</string>
+    <string name="button_close">Close</string>
+    <string name="button_speak">Speak</string>
+    <string name="button_reset">Reset</string>
+    <string name="toast_noaction">No action</string>
+</resources>

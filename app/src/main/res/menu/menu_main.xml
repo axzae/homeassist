@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_hoursand"
+        android:icon="@drawable/ic_timer_sand_black_24dp"
+        android:orderInCategory="-10"
+        android:title="@string/menu_hoursand"
+        android:visible="false"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_info"
+        android:icon="@drawable/ic_info_outline_black_24dp"
+        android:orderInCategory="1"
+        android:title="@string/menu_conn_info"
+        android:visible="false"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_refresh_black_24dp"
+        android:orderInCategory="2"
+        android:title="@string/menu_refresh"
+        android:visible="false"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@drawable/ic_sort_black_24dp"
+        android:orderInCategory="3"
+        android:title="@string/menu_sort"
+        android:visible="false"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@drawable/ic_mode_edit_black_24dp"
+        android:orderInCategory="4"
+        android:title="@string/menu_edit_mode"
+        android:visible="false"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_webui"
+        android:icon="@drawable/ic_public_black_24dp"
+        android:orderInCategory="5"
+        android:title="@string/menu_webui"
+        android:visible="false"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="6"
+        android:title="@string/menu_settings"
+        android:visible="false"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_switch"
+        android:orderInCategory="7"
+        android:title="@string/menu_switch"
+        android:visible="false"
+        app:showAsAction="never"/>
+</menu>

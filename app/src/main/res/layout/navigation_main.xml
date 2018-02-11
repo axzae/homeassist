@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.axzae.homeassistant.view.FixedAspectRatioFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drawer_bg"
+    android:orientation="horizontal"
+    android:paddingBottom="8dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    app:aspectRatioHeight="10"
+    app:aspectRatioWidth="16">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/avatar"
+                    app:civ_border_color="#5AFFFFFF"
+                    app:civ_border_width="4dp"
+                    app:layout_anchor="@id/appbar"
+                    app:layout_anchorGravity="bottom|center"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/text_websocket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="8dp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:padding="8dp"
+                    android:text="\uF6A4"
+                    android:textColor="@color/primary_light"
+                    android:textSize="24dp"
+                    android:textStyle="normal"
+                    app:fontFamily="@font/mdi"
+                    tools:ignore="MissingPrefix,SpUsage"/>
+            </FrameLayout>
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_server"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:foreground="?selectableItemBackground"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                tools:listitem="@android:layout/simple_list_item_activated_1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</com.axzae.homeassistant.view.FixedAspectRatioFrameLayout>

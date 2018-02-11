@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- START xml_defaults -->
+<defaultsMap>
+    <entry>
+        <key>loading_phrase</key>
+        <value>Fetching config…</value>
+    </entry>
+    <entry>
+        <key>adsense</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>adsense_map</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>adsense_widget</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>interstitial</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>welcome_message</key>
+        <value>HomeAssist (Local)</value>
+    </entry>
+</defaultsMap>
+    <!-- END xml_defaults -->

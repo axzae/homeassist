@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorPrimaryDarkBeforeAlpha50">#0367AE</color>
+    <color name="colorAccent">#03A9F4</color>
+    <color name="colorAccentOld">#FF4081</color>
+
+    <color name="colorHomeAssistant">#46bef5</color>
+
+    <color name="colorSensor">#DF4C1E</color>
+    <color name="colorAnySensor">#039BE5</color>
+
+    <color name="colorTypeA">#f06586</color>
+    <color name="colorTypeB">#51b2d2</color>
+    <color name="colorTypeC">#f3a417</color>
+    <color name="colorTypeD">#94c826</color>
+
+    <color name="primary">#03A9F4</color>
+    <color name="primary_dark">#0288D1</color>
+    <color name="primary_light">#B3E5FC</color>
+    <color name="accent">#03A9F4</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorDivider">#BDBDBD</color>
+
+    <color name="xiaomiDivider">#CED3D7</color>
+    <color name="xiaomiPrimaryTextSelected">#28A8E5</color>
+    <color name="xiaomiPrimaryText">#656565</color>
+    <color name="xiaomiGreen">#1AA98D</color>
+    <color name="xiaomiGreenDark">#127662</color>
+
+    <!-- card 9 patch -->
+    <color name="transparent">#00000000</color>
+    <color name="card_background">#44FFFFFF</color>
+    <color name="card_foreground">#EEFFFFFF</color>
+    <color name="card_shadow_1">#26777777</color>
+    <color name="card_shadow_2">#26000000</color>
+    <color name="card_detailing">#eee</color>
+
+    <!--drawer-->
+    <color name="colorDrawerBackground">@color/md_white_1000</color>
+    <color name="colorDrawerDivider">#26000000</color>
+    <color name="colorDrawerTextDisabled">@color/md_grey_500</color>
+    <color name="colorDrawerTextNormal">@color/md_grey_900</color>
+    <color name="colorDrawerTextHover">@color/md_grey_900</color>
+    <color name="colorDrawerTextSelected">@color/md_blue_grey_700</color>
+    <color name="colorDrawerBackgroundHover">@color/md_grey_200</color>
+    <color name="colorDrawerBackgroundSelected">@color/md_grey_200</color>
+    <color name="colorDrawerIconNormal">@color/md_grey_600</color>
+    <color name="colorDrawerIconDisabled">@color/md_grey_400</color>
+
+</resources>

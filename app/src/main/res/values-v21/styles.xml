@@ -1,0 +1,30 @@
+<resources>
+
+    <style name="Theme.Axzae" parent="Base.Theme.Axzae">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="Theme.Axzae.Main" parent="Theme.Axzae">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="Theme.Axzae.EditTheme" parent="Theme.Axzae">
+        <item name="android:statusBarColor">#455A64</item>
+        <item name="colorPrimary">#607D8B</item>
+        <item name="colorPrimaryDark">#455A64</item>
+        <item name="colorAccent">#03A9F4</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button">
+        <item name="android:stateListAnimator">@null</item>
+        <!--<item name="android:background">?android:attr/selectableItemBackground</item>-->
+        <!--<item name="android:gravity">center_horizontal</item>-->
+
+        <!--<item name="colorControlHighlight">@color/md_red_500</item>-->
+
+        <!--<item name="background">@color/md_blue_500</item>-->
+        <!--<item name="android:background">@color/md_green_500</item>-->
+    </style>
+
+</resources>
