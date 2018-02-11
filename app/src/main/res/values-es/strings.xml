@@ -1,0 +1,189 @@
+<resources>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">place-your-key-here</string>
+    <string name="banner_ad_app_id" translatable="false">ca-app-pub-9691552319094645~5151538652</string>
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-9691552319094645/9436422113</string>
+    <string name="banner_ad_unit_id_interstitial" translatable="false">ca-app-pub-9691552319094645/2066864259</string>
+
+    <string name="app_name">HomeAssist</string>
+    <string name="about_extra">HomeAssist is an independent application which is not related to any affiliate. All products, logos and images mentionned in this application are the property of their respective brand.</string>
+    <string name="axzae" translatable="false">axzae</string>
+    <string name="contributors_translation" translatable="false">Никита Якунин for Russian translation.\nPaul de Wit for Dutch translation.\nSquall Chua for Japanese translation.</string>
+
+    <string name="empty" translatable="false"/>
+    <string name="empty_dashboard">Your dashboard is empty</string>
+
+    <string name="title_changelog">Changelog</string>
+    <string name="title_app_info">App Info</string>
+    <string name="title_about">About HomeAssist</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_edit">Edit Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_whats_new">What\'s New?</string>
+    <string name="title_additem">Add Item</string>
+    <string name="title_send_crash_report">Send Crash Report?</string>
+    <string name="title_save_changes">Save changes?</string>
+    <string name="title_saving_error">Saving Error</string>
+
+    <string name="action_cancel">Cancel</string>
+    <string name="action_changelog">Changelog</string>
+    <string name="action_clear_search">Clear Search</string>
+    <string name="action_save">Save</string>
+    <string name="action_discard">Discard</string>
+    <string name="action_dismiss">Dismiss</string>
+    <string name="action_done">Done</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_gotit">Got It</string>
+    <string name="action_logout">Sign out</string>
+    <string name="action_ok">OK</string>
+    <string name="action_yes">Yes</string>
+    <string name="action_no">No</string>
+    <string name="action_remove">Remove</string>
+    <string name="action_report">Report</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_set">Set</string>
+    <string name="action_send">Send</string>
+    <string name="action_dont_send_report">Don\'t Send</string>
+    <string name="action_send_report">Send Report</string>
+    <string name="action_disconnect">Disconnect</string>
+
+    <string name="message_attach_bootstrap">Would you like to attach your entity states file?</string>
+    <string name="message_crash_report">HomeAssist is having trouble parsing your HA bootstrap data. Would you like to email your issue to the developer?</string>
+    <string name="message_recommendation">Hey, check out HomeAssist android app at: %1$s</string>
+    <string name="message_remove">Remove %1$s ?</string>
+    <string name="message_signout">Sign out from %1$s ?</string>
+
+    <string name="menu_about">About</string>
+    <string name="menu_add">Add</string>
+    <string name="menu_add_default">Add Default</string>
+    <string name="menu_cancel">Cancel</string>
+    <string name="menu_clear_search">Clear Search</string>
+    <string name="menu_conn_info">Connection Info</string>
+    <string name="menu_done">Done</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_edit_mode">Edit Dashboard</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_logout">Sign out</string>
+    <string name="menu_privacy_policy">Privacy Policy</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_remove_all">Remove All</string>
+    <string name="menu_save">Save</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_sort">Sort</string>
+    <string name="menu_switch">Sign Out</string>
+    <string name="menu_webui">Load Web UI</string>
+    <string name="menu_open_in_browser">Open in Browser</string>
+    <string name="menu_logbook">Logbook</string>
+    <string name="menu_history">History</string>
+    <string name="menu_faq">FAQs</string>
+    <string name="menu_recommend">Recommend to Friends</string>
+    <string name="menu_hoursand">Database Busy</string>
+    <string name="menu_select">Select</string>
+
+    <string name="progress_saving">Saving…</string>
+    <string name="progress_wait">Please wait…</string>
+    <string name="progress_initializing">Initializing…</string>
+    <string name="progress_connecting">Connecting…</string>
+    <string name="progress_bootstrapping">Bootstrapping…</string>
+    <string name="progress_starting">Starting…</string>
+
+    <string name="error_invalid_password">Invalid Password</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_corrupted">The App is Corrupted</string>
+    <string name="error_no_graph">No graph available</string>
+    <string name="error_connection">Connection error</string>
+
+    <string name="button_cancel">Cancel</string>
+    <string name="button_set">Set</string>
+    <string name="button_connect">Connect</string>
+    <string name="button_edit_dashboard">Edit Dashboard</string>
+    <string name="button_close">Close</string>
+    <string name="button_speak">Speak</string>
+    <string name="button_reset">Reset</string>
+    <string name="button_trigger">Trigger</string>
+
+    <string name="toast_refreshed">Refreshed</string>
+    <string name="toast_triggered">Triggered</string>
+    <string name="toast_noaction">No action</string>
+    <string name="toast_saved">Saved</string>
+
+    <string name="prompt_connection_name">Connection Name</string>
+    <string name="prompt_ipaddress">Base URL (example: http://192.168.2.1:8123)</string>
+    <string name="prompt_password">Password</string>
+
+
+    <string name="hint_baseurl" translatable="false">http://192.168.2.5:8123</string>
+    <string name="optional">(Optional)</string>
+
+    <string name="tutorial_title_add">Add Control</string>
+    <string name="tutorial_title_sort">Sort Control</string>
+    <string name="tutorial_title_remove">Remove Control</string>
+    <string name="tutorial_title_save">Save Your Work</string>
+    <string name="tutorial_desc_add">Tap here to add new control.</string>
+    <string name="tutorial_desc_sort">Hold down to move selected control around.</string>
+    <string name="tutorial_desc_remove">Tap to remove existing control.</string>
+    <string name="tutorial_desc_save">Tap this button to save all your changes and head back to dashboard.</string>
+
+    <string name="pref_category_settings">Settings</string>
+    <string name="pref_column_entries">Number of Columns</string>
+    <string name="pref_column_entries_desc">Adjust this for larger tile display</string>
+    <string name="pref_sound_effect">Sound Effects</string>
+    <string name="pref_sound_effect_desc">Turn on/off clicking sounds</string>
+    <string name="pref_push_notification">Push Notification</string>
+    <string name="pref_push_notification_desc">Allow HomeAssist to push alerts to this device.</string>
+    <string name="pref_websocket_mode">WebSocket Mode</string>
+    <string name="pref_websocket_mode_desc">Start WebSocket on app launch. Enabling this will allow data polling with HA server. Requires restart.</string>
+    <string name="pref_test_push_notification">Test Push Notification</string>
+    <string name="pref_test_push_notification_desc">Press to test on whether push notification is working properly in this device.</string>
+    <string name="pref_category_application">Application</string>
+    <string name="pref_app_version">App Version</string>
+    <string name="pref_build">Build</string>
+    <string name="pref_oss_license">Open Source Libraries</string>
+    <string name="pref_changelog">Changelog</string>
+    <string name="pref_bug_report">Report a bug</string>
+    <string name="pref_about">About HomeAssist</string>
+
+    <string name="about_designed_by">Designed and Developed by</string>
+    <string name="about_contributors">Contributors:</string>
+    <string name="about_suggestions_improvements">Suggestions / Improvements:</string>
+    <string name="about_feedbacks_ratings">Feedbacks / Ratings:</string>
+    <string name="title_send_email">Send Email</string>
+    <string name="error_invalid_ha_server">Invalid HA Server</string>
+    <string name="sort_order">by Order</string>
+    <string name="sort_name">by Name</string>
+    <string name="sort_group">by Group</string>
+
+    <string name="sorted_order">Sorted by Order</string>
+    <string name="sorted_name">Sorted by Name</string>
+    <string name="sorted_group">Sorted by Group</string>
+
+    <string name="option_auto">Auto</string>
+    <string name="exception_connect">Connection timeout</string>
+    <string name="exception_sockettimeout">Socket timeout</string>
+    <string name="exception_unknownhost">Unknown host</string>
+    <string name="exception_socket">Socket error</string>
+    <string name="exception_jsonsyntax">Data Syntax Error</string>
+    <string name="notification_websocket_title">WebSocket is running</string>
+    <string name="toast_websocket_running">WebSocket is already running</string>
+    <string name="groupmenu_application">Application</string>
+
+    <string name="navigation_drawer_open">Open Drawer</string>
+    <string name="navigation_drawer_close">Close Drawer</string>
+    <string name="menu_ads" translatable="false">Watch Ads</string>
+    <string name="label_current_temperature">Current Temperature: </string>
+    <string name="label_target_temperature">Target Temperature</string>
+    <string name="title_add_connection">Add Connection</string>
+    <string name="error_invalid_baseurl">Invalid BaseURL</string>
+    <string name="menu_remove_dashboard">Remove Dashboard</string>
+    <string name="label_time">Time</string>
+    <string name="label_date">Date</string>
+    <string name="menu_map">Map</string>
+    <string name="exception_no_chrome">Require Chrome Browser</string>
+    <string name="title_nozone">No Location Detected</string>
+    <string name="content_nozone">It appears that you do not have zones or device trackers configured in your home assistant.</string>
+    <string name="button_continue">Continue</string>
+    <string name="please_select">Please Select</string>
+    <string name="menu_location">Transmit Location</string>
+
+</resources>
