@@ -5,6 +5,7 @@ HomeAsisst is a clean & colourful Home-Assistant dashboard for Android.
 Download
 --------
 You can find the latest HomeAssist app on GooglePlay Store:
+
 <a href="https://play.google.com/store/apps/details?id=com.axzae.homeassistant">
   <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
 </a>
@@ -31,7 +32,7 @@ Thanks
 
 Donation
 --------
-I would be glad receiving any amount via paypal thru [this link][1].
+I would be glad receiving any amount via **PayPal** thru [this link][1].
 
 License
 -------
