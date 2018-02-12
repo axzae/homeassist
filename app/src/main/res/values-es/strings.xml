@@ -1,0 +1,176 @@
+<resources>
+    <string name="app_name">HomeAssist</string>
+    <string name="about_extra">HomeAssist es una aplicación independiente. Todos los productos, logos e imágenes mencionadas en esta aplicación son propiedad de sus respectivas marcas.</string>
+
+    <string name="empty_dashboard">Tablero Vacío</string>
+    <string name="title_changelog">Registro de Cambios</string>
+    <string name="title_app_info">Información del Programa</string>
+    <string name="title_about">Acerca de HomeAssist</string>
+    <string name="title_dashboard">Tablero</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_edit">Editar Tablero</string>
+    <string name="title_notifications">Notificaciones</string>
+    <string name="title_whats_new">Novedades</string>
+    <string name="title_additem">Agregar Item</string>
+    <string name="title_send_crash_report">Enviar Reporte de Falla?</string>
+    <string name="title_save_changes">Guardar Cambios?</string>
+    <string name="title_saving_error">Guardar Error</string>
+
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_changelog">Registro de Cambios</string>
+    <string name="action_clear_search">Borrar Búsqueda</string>
+    <string name="action_save">Guardar</string>
+    <string name="action_discard">Descartar</string>
+    <string name="action_dismiss">Rechazar</string>
+    <string name="action_done">Listo</string>
+    <string name="action_delete">Eliminar</string>
+    <string name="action_gotit">Entendido</string>
+    <string name="action_logout">Cerrar Sesión</string>
+    <string name="action_ok">OK</string>
+    <string name="action_yes">Si</string>
+    <string name="action_no">No</string>
+    <string name="action_remove">Remover</string>
+    <string name="action_report">Reportar</string>
+    <string name="action_retry">Reintentar</string>
+    <string name="action_set">Establecer</string>
+    <string name="action_send">Enviar</string>
+    <string name="action_dont_send_report">No Enviar</string>
+    <string name="action_send_report">Enviar Reporte</string>
+    <string name="action_disconnect">Desconectar</string>
+
+    <string name="message_attach_bootstrap">Desea adjuntar el archivo de estados de entidad?</string>
+    <string name="message_crash_report">HomeAssist está experimentando problemas al analizar los datos de arranque de HA. Desea informar de este problema a los desarrolladores?</string>
+    <string name="message_recommendation">Descarga la aplicación HomeAssist para Android en: %1$s</string>
+    <string name="message_remove">Remover %1$s ?</string>
+    <string name="message_signout">Cerrar Sesión desde %1$s ?</string>
+
+    <string name="menu_about">Acerca de</string>
+    <string name="menu_add">Agregar</string>
+    <string name="menu_add_default">Agregar por Defecto</string>
+    <string name="menu_cancel">Cancelar</string>
+    <string name="menu_clear_search">Borrar Búsqueda</string>
+    <string name="menu_conn_info">Información de Conexión</string>
+    <string name="menu_done">Listo</string>
+    <string name="menu_edit">Editar</string>
+    <string name="menu_edit_mode">Editar Tablero</string>
+    <string name="menu_help">Ayuda</string>
+    <string name="menu_logout">Cerrar Sesión</string>
+    <string name="menu_privacy_policy">Política de Privacidad</string>
+    <string name="menu_refresh">Refrescar</string>
+    <string name="menu_remove_all">Remover Todo</string>
+    <string name="menu_save">Guardar</string>
+    <string name="menu_search">Buscar</string>
+    <string name="menu_settings">Configuración</string>
+    <string name="menu_sort">Ordenar</string>
+    <string name="menu_switch">Cerrar Sesión</string>
+    <string name="menu_webui">Abrir Página Web de HA</string>
+    <string name="menu_open_in_browser">Abrir en Navegador</string>
+    <string name="menu_logbook">Registro</string>
+    <string name="menu_history">Historial</string>
+    <string name="menu_faq">FAQs</string>
+    <string name="menu_recommend">Recomendar</string>
+    <string name="menu_hoursand">Base de Datos Ocupada</string>
+    <string name="menu_select">Seleccionar</string>
+
+    <string name="progress_saving">Guardando…</string>
+    <string name="progress_wait">Espere…</string>
+    <string name="progress_initializing">Inicializando…</string>
+    <string name="progress_connecting">Conectando…</string>
+    <string name="progress_bootstrapping">Iniciando…</string>
+    <string name="progress_starting">Comenzando…</string>
+
+    <string name="error_invalid_password">Contraseña no válida</string>
+    <string name="error_field_required">Campo requerido</string>
+    <string name="error_corrupted">Aplicación dañada</string>
+    <string name="error_no_graph">Gráfico no disponible</string>
+    <string name="error_connection">Error de Conexión</string>
+
+    <string name="button_cancel">Cancelar</string>
+    <string name="button_set">Configurar</string>
+    <string name="button_connect">Conectar</string>
+    <string name="button_edit_dashboard">Editar Tablero</string>
+    <string name="button_close">Cerrar</string>
+    <string name="button_speak">Hablar</string>
+    <string name="button_reset">Restablecer</string>
+    <string name="button_trigger">Activar</string>
+
+    <string name="toast_refreshed">Refrescado</string>
+    <string name="toast_triggered">Activado</string>
+    <string name="toast_noaction">Sin acción</string>
+    <string name="toast_saved">Guardado</string>
+
+    <string name="prompt_connection_name">Nombre de Conexión</string>
+    <string name="prompt_ipaddress">URL Base (ejemplo: http://192.168.1.10:8123)</string>
+    <string name="prompt_password">Contraseña</string>
+
+    <string name="optional">(Opcional)</string>
+
+    <string name="tutorial_title_add">Agregar Control</string>
+    <string name="tutorial_title_sort">Ordenar Controles</string>
+    <string name="tutorial_title_remove">Remover Control</string>
+    <string name="tutorial_title_save">Guardar</string>
+    <string name="tutorial_desc_add">Tocar aquí para agregar un nuevo control.</string>
+    <string name="tutorial_desc_sort">Mantener apretado para mover el control seleccionado.</string>
+    <string name="tutorial_desc_remove">Tocar para remover un control existente.</string>
+    <string name="tutorial_desc_save">Tocar este botón para guardar todos los cambios y volver al tablero.</string>
+
+    <string name="pref_category_settings">Configuración</string>
+    <string name="pref_column_entries">Cantidad de Columnas</string>
+    <string name="pref_column_entries_desc">Ajustar para una pantalla mas grande</string>
+    <string name="pref_sound_effect">Efectos de Sonido</string>
+    <string name="pref_sound_effect_desc">Encender/Apagar sonidos de click</string>
+    <string name="pref_push_notification">Notificaciones Push</string>
+    <string name="pref_push_notification_desc">Permitir a HomeAssist enviar alertas a este dispositivo.</string>
+    <string name="pref_websocket_mode">Modo WebSocket</string>
+    <string name="pref_websocket_mode_desc">Iniciar WebSocket al iniciar la aplicación. Habilita interrogar al servidor HA. Requiere reiniciar.</string>
+    <string name="pref_test_push_notification">Probar Notificaciones Push</string>
+    <string name="pref_test_push_notification_desc">Tocar para probar si las notificaciones push funcionan correctamente en este dispositivo.</string>
+    <string name="pref_category_application">Aplicación</string>
+    <string name="pref_app_version">Versión</string>
+    <string name="pref_build">Compilación</string>
+    <string name="pref_oss_license">Librerías Open Source</string>
+    <string name="pref_changelog">Registro de Cambios</string>
+    <string name="pref_bug_report">Reportar una Falla</string>
+    <string name="pref_about">Acerca de HomeAssist</string>
+
+    <string name="about_designed_by">Diseñado y Desarrollado por</string>
+    <string name="about_contributors">Colaboradores:</string>
+    <string name="about_suggestions_improvements">Sugerencias / Mejoras:</string>
+    <string name="about_feedbacks_ratings">Comentarios / Puntuaciones:</string>
+    <string name="title_send_email">Enviar Email</string>
+    <string name="error_invalid_ha_server">Servidor de HA no válido</string>
+    <string name="sort_order">por Edición</string>
+    <string name="sort_name">por Nombre</string>
+    <string name="sort_group">por Grupo</string>
+
+    <string name="sorted_order">Ordenado por Edición</string>
+    <string name="sorted_name">Ordenado por Nombre</string>
+    <string name="sorted_group">Ordenado por Grupo</string>
+
+    <string name="option_auto">Auto</string>
+    <string name="exception_connect">Tiempo de Conexión Expirado</string>
+    <string name="exception_sockettimeout">Tiempo de Socket Expirado</string>
+    <string name="exception_unknownhost">Host Desconocido</string>
+    <string name="exception_socket">Error de Socket</string>
+    <string name="exception_jsonsyntax">Error en Datos</string>
+    <string name="notification_websocket_title">WebSocket Activo</string>
+    <string name="toast_websocket_running">WebSocket Activo</string>
+    <string name="groupmenu_application">Aplicación</string>
+
+    <string name="navigation_drawer_open">Abrir Menú</string>
+    <string name="navigation_drawer_close">Cerrar Menú</string>
+    <string name="label_current_temperature">Temperatura Actual: </string>
+    <string name="label_target_temperature">Temperatura Objetivo: </string>
+    <string name="title_add_connection">Agregar Conexión</string>
+    <string name="error_invalid_baseurl">URL Base no válida</string>
+    <string name="menu_remove_dashboard">Remover Tablero</string>
+    <string name="label_time">Hora</string>
+    <string name="label_date">Fecha</string>
+    <string name="menu_map">Mapa</string>
+    <string name="exception_no_chrome">Se Requiere Navegador Chrome</string>
+    <string name="title_nozone">No se pudo detectar la ubicación</string>
+    <string name="content_nozone">Parece que en HOME ASSISTANT no hay configurados zonas y/o rastreadores de dispositivos.</string>
+    <string name="button_continue">Continuar</string>
+    <string name="please_select">Seleccionar</string>
+    <string name="menu_location">Transmitir ubicación</string>
+</resources>
