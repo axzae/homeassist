@@ -7,7 +7,7 @@
     <string name="app_name">HomeAssist</string>
     <string name="about_extra">HomeAssist is an independent application which is not related to any affiliate. All products, logos and images mentionned in this application are the property of their respective brand.</string>
     <string name="axzae" translatable="false">axzae</string>
-    <string name="contributors_translation" translatable="false">Никита Якунин for Russian translation.\nPaul de Wit for Dutch translation.\nSquall Chua for Japanese translation.</string>
+    <string name="contributors_translation" translatable="false">Никита Якунин for Russian translation.\nPaul de Wit for Dutch translation.\nSquall Chua for Japanese translation.\nAdrian Scillato for Spanish translation.</string>
 
     <string name="empty" translatable="false"/>
     <string name="empty_dashboard">Your dashboard is empty</string>
