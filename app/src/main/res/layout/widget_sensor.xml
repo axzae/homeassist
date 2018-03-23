@@ -1,0 +1,82 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card_back"
+    android:padding="3dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_front"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:lines="1"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingBottom="3dp"
+                android:textColor="@color/xiaomiPrimaryTextSelected"
+                android:textSize="13sp"
+                android:textStyle="normal"
+                tools:ignore="MissingPrefix"
+                tools:text="Sensorname"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image_icon"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="0dp"
+                    android:contentDescription="@null"
+                    />
+
+                <TextView
+                    android:id="@+id/text_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="1dp"
+                    android:textColor="@color/xiaomiPrimaryTextSelected"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    tools:ignore="MissingPrefix"
+                    tools:text="12.1 *C" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/text_updated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:textColor="@color/color_xiaomi"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                tools:ignore="MissingPrefix,SmallSp"
+                tools:text="19:00"/>
+
+        </LinearLayout>
+</FrameLayout>

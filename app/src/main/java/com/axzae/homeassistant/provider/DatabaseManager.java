@@ -20,7 +20,7 @@ import java.util.Collections;
 import java.util.Comparator;
 
 public class DatabaseManager extends SQLiteOpenHelper {
-    private static final int DATABASE_VERSION = 8;
+    private static final int DATABASE_VERSION = 9;
     private static final String DATABASE_NAME = "HOMEASSISTANT";
     private static DatabaseManager sInstance;
 
@@ -67,6 +67,10 @@ public class DatabaseManager extends SQLiteOpenHelper {
                 onCreateVer7(database);
             case 7:
                 onCreateVer2(database);
+        }
+        if (oldVersion>5 && oldVersion <9) {
+            database.execSQL("ALTER TABLE " + TABLE_WIDGET + " ADD COLUMN WIDGET_TYPE VARCHAR");
+            database.execSQL("UPDATE " + TABLE_WIDGET + " SET WIDGET_TYPE='ENTITY'");
         }
     }
 
@@ -127,6 +131,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
         sql += "\n" + "CREATE TABLE " + TABLE_WIDGET;
         sql += "\n" + "(";
         sql += "\n" + "	WIDGET_ID INTEGER,";
+        sql += "\n" + " WIDGET_TYPE VARCHAR,"; //Added in db version 9
         sql += "\n" + "	ENTITY_ID VARCHAR,";
         sql += "\n" + "	FRIENDLY_STATE VARCHAR,";
         sql += "\n" + "	FRIENDLY_NAME VARCHAR,";
@@ -329,6 +334,24 @@ public class DatabaseManager extends SQLiteOpenHelper {
         cursor.close();
         return results;
     }
+    public ArrayList<Entity> getSensors() {
+        ArrayList<Entity> results = new ArrayList<>();
+        // Select All Query
+        String selectQuery = "SELECT * from " + TABLE_ENTITY + " WHERE ENTITY_ID LIKE 'sensor.%' ORDER BY FRIENDLY_NAME ASC, DOMAIN ASC";
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        // looping through all rows and adding to list
+        if (cursor.moveToFirst()) {
+            do {
+                results.add(Entity.getInstance(cursor));
+            } while (cursor.moveToNext());
+        }
+
+        cursor.close();
+        return results;
+    }
 
     public int updateSortKeyForGroup(int sortKey, int groupId) {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -469,13 +492,14 @@ public class DatabaseManager extends SQLiteOpenHelper {
         }
     }
 
-    public void insertWidget(int widgetId, Entity entity) {
+    public void insertWidget(int widgetId, Entity entity, String widgetType) {
         SQLiteDatabase db = this.getWritableDatabase();
         db.beginTransaction();
 
         try {
             ContentValues initialValues = new ContentValues();
             initialValues.put("WIDGET_ID", widgetId);
+            initialValues.put("WIDGET_TYPE", widgetType);
             initialValues.put("ENTITY_ID", entity.entityId);
             initialValues.put("FRIENDLY_STATE", entity.getFriendlyName());
             initialValues.put("FRIENDLY_NAME", entity.getFriendlyName());
@@ -522,9 +546,24 @@ public class DatabaseManager extends SQLiteOpenHelper {
         return widget;
     }
 
-    public ArrayList<Integer> getWidgetIdsByEntityId(String entityId) {
+    public ArrayList<Integer> getEntityWidgetIdsByEntityId(String entityId) {
         //String selectQuery = "SELECT * from " + TABLE_ENTITY + " WHERE ENTITY_ID='" + entityId + "'";
-        String selectQuery = "SELECT WIDGET_ID FROM widgets WHERE ENTITY_ID='" + entityId + "'";
+        String selectQuery = "SELECT WIDGET_ID FROM widgets WHERE WIDGET_TYPE<>'SENSOR' and ENTITY_ID='" + entityId + "'";
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+        ArrayList<Integer> results = new ArrayList<>();
+        if (cursor.moveToFirst()) {
+            int widgetId = cursor.getInt(cursor.getColumnIndex("WIDGET_ID"));
+            results.add(widgetId);
+        }
+        cursor.close();
+        return results;
+    }
+
+    public ArrayList<Integer> getSensorWidgetIdsByEntityId(String entityId) {
+        //String selectQuery = "SELECT * from " + TABLE_ENTITY + " WHERE ENTITY_ID='" + entityId + "'";
+        String selectQuery = "SELECT WIDGET_ID FROM widgets WHERE WIDGET_TYPE='SENSOR' and ENTITY_ID='" + entityId + "'";
 
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);

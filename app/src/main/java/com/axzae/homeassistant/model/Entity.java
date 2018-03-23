@@ -9,6 +9,9 @@ import com.crashlytics.android.Crashlytics;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.gson.annotations.SerializedName;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Locale;
 
 public class Entity {
@@ -78,6 +81,22 @@ public class Entity {
         return (attributes == null || attributes.friendlyName == null) ? "" : attributes.friendlyName;
     }
 
+
+    public String getLastUpdated() {
+        DateFormat iso8601DateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSSSSXXX");
+        SimpleDateFormat widgetDateFormat = new SimpleDateFormat("HH:mm");
+        if (lastUpdated == null) {
+            return "";
+        } else {
+            try {
+                Date parsed = iso8601DateFormat.parse(lastUpdated);
+
+                return widgetDateFormat.format(parsed);
+            } catch (java.text.ParseException e) {
+                return "";
+            }
+        }
+    }
     public boolean isHidden() {
         return attributes != null && attributes.hidden != null && attributes.hidden;
     }
