@@ -170,13 +170,18 @@ public class EntityContentProvider extends ContentProvider {
         //Update if there are widgets found.
         final String entityId = values.getAsString("ENTITY_ID");
         Entity entity = mSqliteOpenHelper.getEntityById(entityId);
-        ArrayList<Integer> widgetIds = mSqliteOpenHelper.getWidgetIdsByEntityId(entityId);
+        ArrayList<Integer> widgetIds = mSqliteOpenHelper.getEntityWidgetIdsByEntityId(entityId);
         for (int widgetId : widgetIds) {
             Log.d("YouQi", "Updating Widget: " + widgetId);
             Widget widget = Widget.getInstance(entity, widgetId);
             EntityWidgetProvider.updateEntityWidget(getContext(), widget);
         }
-
+        ArrayList<Integer> sensorWidgetIds = mSqliteOpenHelper.getSensorWidgetIdsByEntityId(entityId);
+        for (int sensorId : sensorWidgetIds) {
+            Log.d("YouQi", "Updating Sensor Widget: " + sensorId);
+            Widget widget = Widget.getInstance(entity, sensorId);
+            SensorWidgetProvider.updateEntityWidget(getContext(), widget);
+        }
         Uri newUri = DummyContentProvider.getUrl(entityId);
         Log.d("YouQi", "inform URI: " + newUri);
 

@@ -41,6 +41,7 @@ import com.axzae.homeassistant.model.Group;
 import com.axzae.homeassistant.model.HomeAssistantServer;
 import com.axzae.homeassistant.provider.DatabaseManager;
 import com.axzae.homeassistant.provider.EntityWidgetProvider;
+import com.axzae.homeassistant.provider.SensorWidgetProvider;
 import com.axzae.homeassistant.provider.ServiceProvider;
 import com.axzae.homeassistant.util.CommonUtil;
 import com.crashlytics.android.Crashlytics;
@@ -434,7 +435,12 @@ public class ConnectActivity extends BaseActivity {
             mSharedPref = getAppController().getSharedPref();
 
 
-            int ids[] = AppWidgetManager.getInstance(ConnectActivity.this).getAppWidgetIds(new ComponentName(ConnectActivity.this, EntityWidgetProvider.class));
+            int entityIds[] = AppWidgetManager.getInstance(ConnectActivity.this).getAppWidgetIds(new ComponentName(ConnectActivity.this, EntityWidgetProvider.class));
+            int sensorIds[] = AppWidgetManager.getInstance(ConnectActivity.this).getAppWidgetIds(new ComponentName(ConnectActivity.this, SensorWidgetProvider.class));
+            int[] ids = new int[entityIds.length + sensorIds.length];
+            System.arraycopy(entityIds, 0, ids, 0, entityIds.length);
+            System.arraycopy(sensorIds, 0, ids, entityIds.length, sensorIds.length);
+
             if (ids.length > 0) {
                 ArrayList<String> appWidgetIds = new ArrayList<>();
                 for (int id : ids) {
@@ -446,6 +452,7 @@ public class ConnectActivity extends BaseActivity {
                 databaseManager.housekeepWidgets(appWidgetIds);
 
             }
+
             //mBundle = getIntent().getExtras();
             return null;
         }

@@ -21,6 +21,7 @@ import com.axzae.homeassistant.model.rest.CallServiceRequest;
 import com.axzae.homeassistant.model.rest.RxPayload;
 import com.axzae.homeassistant.provider.DatabaseManager;
 import com.axzae.homeassistant.provider.EntityWidgetProvider;
+import com.axzae.homeassistant.provider.SensorWidgetProvider;
 import com.axzae.homeassistant.provider.ServiceProvider;
 import com.axzae.homeassistant.service.DataSyncService;
 import com.axzae.homeassistant.shared.EntityProcessInterface;
@@ -47,7 +48,7 @@ public class TransparentActivity extends BaseActivity implements DialogInterface
     private SharedPreferences mSharedPref;
     private Entity mEntity;
     private Call<ArrayList<Entity>> mCall;
-    private int mWidgetId;
+    private int mWidgetId, mWidgetType;
     private HomeAssistantServer mCurrentServer;
     private ArrayList<HomeAssistantServer> mServers;
     private Toast mToast;
@@ -91,7 +92,7 @@ public class TransparentActivity extends BaseActivity implements DialogInterface
         mServers = DatabaseManager.getInstance(this).getConnections();
         mCurrentServer = mServers.get(mSharedPref.getInt("connectionIndex", 0));
         mWidgetId = getIntent().getIntExtra("appWidgetId", 0);
-
+        mWidgetType = getIntent().getIntExtra("appWidgetType", 0);
         String json = getIntent().getExtras().getString("entity");
         mEntity = CommonUtil.inflate(json, Entity.class);
         final Entity entity = mEntity;
@@ -116,7 +117,11 @@ public class TransparentActivity extends BaseActivity implements DialogInterface
                     if (restResponse != null) {
                         getContentResolver().update(Uri.parse("content://com.axzae.homeassistant.provider.EntityContentProvider/"), restResponse.getContentValues(), "ENTITY_ID='" + restResponse.entityId + "'", null);
                         Widget newWidget = DatabaseManager.getInstance(TransparentActivity.this).getWidgetById(mWidgetId);
-                        EntityWidgetProvider.updateEntityWidget(TransparentActivity.this, newWidget);
+                        if (mWidgetType == 1) {
+                            SensorWidgetProvider.updateEntityWidget(TransparentActivity.this, newWidget);
+                        } else {
+                            EntityWidgetProvider.updateEntityWidget(TransparentActivity.this, newWidget);
+                        }
                     }
                 }
 
@@ -176,7 +181,11 @@ public class TransparentActivity extends BaseActivity implements DialogInterface
 
                             if (entity.equals(mEntity)) {
                                 Widget widget = Widget.getInstance(entity, mWidgetId);
-                                EntityWidgetProvider.updateEntityWidget(TransparentActivity.this, widget);
+                                if (mWidgetType == 1) {
+                                    SensorWidgetProvider.updateEntityWidget(TransparentActivity.this, widget);
+                                } else {
+                                    EntityWidgetProvider.updateEntityWidget(TransparentActivity.this, widget);
+                                }
                             }
                         }
                     }

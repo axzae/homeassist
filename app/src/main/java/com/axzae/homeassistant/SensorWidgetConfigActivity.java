@@ -1,8 +1,5 @@
 package com.axzae.homeassistant;
 
-import static android.appwidget.AppWidgetManager.EXTRA_APPWIDGET_ID;
-import static android.appwidget.AppWidgetManager.INVALID_APPWIDGET_ID;
-
 import android.appwidget.AppWidgetManager;
 import android.content.Context;
 import android.content.Intent;
@@ -24,11 +21,14 @@ import android.widget.Toast;
 import com.axzae.homeassistant.model.Entity;
 import com.axzae.homeassistant.model.Widget;
 import com.axzae.homeassistant.provider.DatabaseManager;
-import com.axzae.homeassistant.provider.EntityWidgetProvider;
+import com.axzae.homeassistant.provider.SensorWidgetProvider;
 
 import java.util.ArrayList;
 
-public class WidgetConfigActivity extends BaseActivity {
+import static android.appwidget.AppWidgetManager.EXTRA_APPWIDGET_ID;
+import static android.appwidget.AppWidgetManager.INVALID_APPWIDGET_ID;
+
+public class SensorWidgetConfigActivity extends BaseActivity {
 
     private ListView mListView;
     private EntityListAdapter mAdapter;
@@ -78,7 +78,7 @@ public class WidgetConfigActivity extends BaseActivity {
     }
 
     public void initListViews() {
-        final ArrayList<Entity> mEntities = mDatabaseManager.getEntities();
+        final ArrayList<Entity> mEntities = mDatabaseManager.getSensors();
         mAdapter = new EntityListAdapter(mEntities);
 
         mListView = findViewById(R.id.list_view);
@@ -100,9 +100,9 @@ public class WidgetConfigActivity extends BaseActivity {
         if (extras != null) {
             appWidgetId = extras.getInt(EXTRA_APPWIDGET_ID, INVALID_APPWIDGET_ID);
 
-            mDatabaseManager.insertWidget(appWidgetId, selectedItem, "ENTITY");
+            mDatabaseManager.insertWidget(appWidgetId, selectedItem, "SENSOR");
             Widget widget = Widget.getInstance(selectedItem, appWidgetId);
-            EntityWidgetProvider.updateEntityWidget(this, widget);
+            SensorWidgetProvider.updateEntityWidget(this, widget);
 
             setResult(RESULT_OK);
             finish();
@@ -170,7 +170,7 @@ public class WidgetConfigActivity extends BaseActivity {
         }
 
         public Context getContext() {
-            return WidgetConfigActivity.this;
+            return SensorWidgetConfigActivity.this;
         }
     }
 

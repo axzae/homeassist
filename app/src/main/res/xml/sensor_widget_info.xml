@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:configure="com.axzae.homeassistant.SensorWidgetConfigActivity"
+    android:initialLayout="@layout/widget_sensor"
+    android:minHeight="60dp"
+    android:minWidth="80dp"
+    android:previewImage="@drawable/sensor_widget_sample"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="1800000"
+    android:widgetCategory="home_screen|keyguard">
+</appwidget-provider>

@@ -10,11 +10,8 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.PorterDuff;
-import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.Typeface;
-import android.graphics.drawable.Icon;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -23,24 +20,21 @@ import android.util.Log;
 import android.widget.RemoteViews;
 
 import com.axzae.homeassistant.AppController;
-import com.axzae.homeassistant.EditActivity;
 import com.axzae.homeassistant.R;
 import com.axzae.homeassistant.TransparentActivity;
 import com.axzae.homeassistant.model.Entity;
 import com.axzae.homeassistant.model.HomeAssistantServer;
-import com.axzae.homeassistant.model.MDIFont;
 import com.axzae.homeassistant.model.Widget;
 import com.axzae.homeassistant.util.CommonUtil;
 import com.axzae.homeassistant.util.FaultUtil;
 
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class EntityWidgetProvider extends AppWidgetProvider {
+public class SensorWidgetProvider extends AppWidgetProvider {
 
     private static void setTextSizeForWidth(Paint paint, float desiredWidth, String text) {
 
@@ -88,14 +82,15 @@ public class EntityWidgetProvider extends AppWidgetProvider {
         int xPos = (canvas.getWidth() - yPos) / 2;//(canvas.getWidth() / 2);
         canvas.drawText(iconText, 0, yPos, paint);
 
-        RemoteViews remoteViews = new RemoteViews("com.axzae.homeassistant", R.layout.widget_entity);
+        RemoteViews remoteViews = new RemoteViews("com.axzae.homeassistant", R.layout.widget_sensor);
         remoteViews.setImageViewBitmap(R.id.image_icon, myBitmap);
         remoteViews.setTextViewText(R.id.text_state, widget.getFriendlyStateRow());
         remoteViews.setTextColor(R.id.text_state, iconColor);
         remoteViews.setTextViewText(R.id.text_group, widget.getFriendlyName());
+        remoteViews.setTextViewText(R.id.text_updated, widget.getLastUpdated());
 
         //https://stackoverflow.com/questions/21311917/onreceive-will-always-receive-the-last-appwidgetid-even-different-instance-widg
-        Intent newIntent = new Intent(context, EntityWidgetProvider.class);
+        Intent newIntent = new Intent(context, SensorWidgetProvider.class);
         newIntent.setAction(AppWidgetManager.ACTION_APPWIDGET_UPDATE);
         newIntent.putExtra("appWidgetId", widget.appWidgetId);
         newIntent.putExtra("widget", CommonUtil.deflate(widget));
@@ -187,7 +182,7 @@ public class EntityWidgetProvider extends AppWidgetProvider {
             newIntent.putExtra("appWidgetId", widget.appWidgetId);
             newIntent.putExtra("entityId", widget.entityId);
             newIntent.putExtra("entity", CommonUtil.deflate(dbEntity));
-            newIntent.putExtra("appWidgetType", 0);
+            newIntent.putExtra("appWidgetType", 1);
             newIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.getApplicationContext().startActivity(newIntent);
         }
