@@ -1,0 +1,179 @@
+<resources>
+
+    <string name="app_name">HomeAssist</string>
+    <string name="about_extra">HomeAssist je nezávislá aplikace, která nesouvisí s žádnou přidruženou společností. Všechny produkty, loga a obrázky uvedené v této aplikaci jsou majetkem příslušné značky.</string>
+
+    <string name="empty_dashboard">Váš řídicí panel je prázdný</string>
+
+    <string name="title_changelog">Changelog</string>
+    <string name="title_app_info">Informace o aplikaci</string>
+    <string name="title_about">O HomeAssist</string>
+    <string name="title_dashboard">Řídicí panel</string>
+    <string name="title_home">Domov</string>
+    <string name="title_edit">Upravit řídicí panel</string>
+    <string name="title_notifications">Oznámení</string>
+    <string name="title_whats_new">Co je nového?</string>
+    <string name="title_additem">Přidat položku</string>
+    <string name="title_send_crash_report">Odeslat zprávu o chybě?</string>
+    <string name="title_save_changes">Uložit změny?</string>
+    <string name="title_saving_error">Chyba uložení</string>
+
+    <string name="action_cancel">Zrušit</string>
+    <string name="action_changelog">Changelog</string>
+    <string name="action_clear_search">Vymazat vyhledávání</string>
+    <string name="action_save">Uložit</string>
+    <string name="action_discard">Zahodit</string>
+    <string name="action_dismiss">Zrušit</string>
+    <string name="action_done">Hotovo</string>
+    <string name="action_delete">Smazat</string>
+    <string name="action_gotit">Mám to</string>
+    <string name="action_logout">Odhlásit</string>
+    <string name="action_ok">OK</string>
+    <string name="action_yes">Ano</string>
+    <string name="action_no">Ne</string>
+    <string name="action_remove">Smazat</string>
+    <string name="action_report">Nahlásit</string>
+    <string name="action_retry">Opakovat</string>
+    <string name="action_set">Nastavit</string>
+    <string name="action_send">Odeslat</string>
+    <string name="action_dont_send_report">Neodesílat</string>
+    <string name="action_send_report">Odeslat hlášení</string>
+    <string name="action_disconnect">Odpojit</string>
+
+    <string name="message_attach_bootstrap">Chcete připojit váš soubor soubor entit?</string>
+    <string name="message_crash_report">HomeAssist má potíže s analýzou vašich údajů o HA bootstrapu. Chcete zaslat svůj problém vývojáři e-mailem?</string>
+    <string name="message_recommendation">Mrkněte se na HomeAssistant Android aplikaci na: %1$s</string>
+    <string name="message_remove">Smazat %1$s ?</string>
+    <string name="message_signout">Odhlásit se od %1$s ?</string>
+
+    <string name="menu_about">O</string>
+    <string name="menu_add">Přidat</string>
+    <string name="menu_add_default">Přidat výchozí</string>
+    <string name="menu_cancel">Zrušit</string>
+    <string name="menu_clear_search">Vymazat vyhledávání</string>
+    <string name="menu_conn_info">Informace o připojení</string>
+    <string name="menu_done">Hotovo</string>
+    <string name="menu_edit">Upravit</string>
+    <string name="menu_edit_mode">Upravit řídicí panel</string>
+    <string name="menu_help">Pomoc</string>
+    <string name="menu_logout">Odhlásit</string>
+    <string name="menu_privacy_policy">Zásady ochrany osobních údajů</string>
+    <string name="menu_refresh">Obnovit</string>
+    <string name="menu_remove_all">Smazat vše</string>
+    <string name="menu_save">Uložit</string>
+    <string name="menu_search">Hledat</string>
+    <string name="menu_settings">Nastavení</string>
+    <string name="menu_sort">Seřadit</string>
+    <string name="menu_switch">Odhlásit</string>
+    <string name="menu_webui">Načíst Web UI</string>
+    <string name="menu_open_in_browser">Otevřít v prohlížeči</string>
+    <string name="menu_logbook">Záznamy</string>
+    <string name="menu_history">Historie</string>
+    <string name="menu_faq">FAQ</string>
+    <string name="menu_recommend">Doporučit kamarádovi</string>
+    <string name="menu_hoursand">Databáze je obsazena</string>
+    <string name="menu_select">Vybrat</string>
+
+    <string name="progress_saving">Ukládání…</string>
+    <string name="progress_wait">Počkejte prosím…</string>
+    <string name="progress_initializing">Inicializace…</string>
+    <string name="progress_connecting">Připojování…</string>
+    <string name="progress_bootstrapping">Bootstrapování…</string>
+    <string name="progress_starting">Spouštění…</string>
+
+    <string name="error_invalid_password">Špatné heslo</string>
+    <string name="error_field_required">Toto pole je vyžadováno</string>
+    <string name="error_corrupted">Aplikace je poškozená</string>
+    <string name="error_no_graph">Graf není dostupný</string>
+    <string name="error_connection">Chyba spojení</string>
+
+    <string name="button_cancel">Zrušit</string>
+    <string name="button_set">Nastavit</string>
+    <string name="button_connect">Připojit</string>
+    <string name="button_edit_dashboard">Upravit řídicí panel</string>
+    <string name="button_close">Zavřít</string>
+    <string name="button_speak">Mluvit</string>
+    <string name="button_reset">Obnovit</string>
+    <string name="button_trigger">Spustit</string>
+
+    <string name="toast_refreshed">Obnoveno</string>
+    <string name="toast_triggered">Spuštěno</string>
+    <string name="toast_noaction">Žádné akce</string>
+    <string name="toast_saved">Uloženo</string>
+
+    <string name="prompt_connection_name">Název připojení</string>
+    <string name="prompt_ipaddress">Základní URL (příklad: http://192.168.2.1:8123)</string>
+    <string name="prompt_password">Heslo</string>
+
+    <string name="optional">(Volitelné)</string>
+
+    <string name="tutorial_title_add">Přidat ovládání</string>
+    <string name="tutorial_title_sort">Seřadit ovládání</string>
+    <string name="tutorial_title_remove">Smazat ovládání</string>
+    <string name="tutorial_title_save">Uložit svou práci</string>
+    <string name="tutorial_desc_add">Klepnutím sem přidáte nový ovládací prvek.</string>
+    <string name="tutorial_desc_sort">Podržte pro přesunutí vybraného ovládání.</string>
+    <string name="tutorial_desc_remove">Klepnutím odstraníte existující ovládací prvek.</string>
+    <string name="tutorial_desc_save">Klepnutím na toto tlačítko uložte všechny změny a přejděte zpět na řídící panel.</string>
+
+    <string name="pref_category_settings">Nastavení</string>
+    <string name="pref_column_entries">Počet sloupců</string>
+    <string name="pref_column_entries_desc">Upravte pro zobrazení větších dlaždic</string>
+    <string name="pref_sound_effect">Zvukové efekty</string>
+    <string name="pref_sound_effect_desc">Zapnout/vypnout zvukové efekty po kliknutí</string>
+    <string name="pref_push_notification">Oznámení</string>
+    <string name="pref_push_notification_desc">Povolit HomeAssist upozornění na toto zařízení.</string>
+    <string name="pref_websocket_mode">WebSocket mód</string>
+    <string name="pref_websocket_mode_desc">Spustit WebSocket při spuštění aplikace. Povolením tohoto nastavení umožní živé dotazování dat ze serveru HA. Vyžaduje restart.</string>
+    <string name="pref_test_push_notification">Otestovat oznámení</string>
+    <string name="pref_test_push_notification_desc">Stisknutím zkontrolujete, zda oznámení v tomto přístroji pracují správně.</string>
+    <string name="pref_category_application">Aplikace</string>
+    <string name="pref_app_version">Verze</string>
+    <string name="pref_build">Sestavení</string>
+    <string name="pref_oss_license">Open Source knihovny</string>
+    <string name="pref_changelog">Changelog</string>
+    <string name="pref_bug_report">Nahlásit chybu</string>
+    <string name="pref_about">O HomeAssist</string>
+
+    <string name="about_designed_by">Navrhl a vyvinul</string>
+    <string name="about_contributors">Přispěvatelé:</string>
+    <string name="about_suggestions_improvements">Návrhy / vylepšení:</string>
+    <string name="about_feedbacks_ratings">Zpětná vazby / Hodnocení:</string>
+    <string name="title_send_email">Poslat e-mail</string>
+    <string name="error_invalid_ha_server">Neplatný HA server</string>
+    <string name="sort_order">podle pořadí</string>
+    <string name="sort_name">podle jména</string>
+    <string name="sort_group">podle skupiny</string>
+
+    <string name="sorted_order">Řazeno podle pořadí</string>
+    <string name="sorted_name">Řazeno podle jména</string>
+    <string name="sorted_group">Řazeno podle skupiny</string>
+
+    <string name="option_auto">Automaticky</string>
+    <string name="exception_connect">Časový limit spojení vypršel</string>
+    <string name="exception_sockettimeout">Časový limit socketu vypršel</string>
+    <string name="exception_unknownhost">Neznámý hostitel</string>
+    <string name="exception_socket">Chyba socketu</string>
+    <string name="exception_jsonsyntax">Chyba syntaxe dat</string>
+    <string name="notification_websocket_title">WebSocket běží</string>
+    <string name="toast_websocket_running">WebSocket již běží</string>
+    <string name="groupmenu_application">Aplikace</string>
+
+    <string name="navigation_drawer_open">Otevřít zásuvku</string>
+    <string name="navigation_drawer_close">Zavřít zásuvku</string>
+    <string name="label_current_temperature">Aktuální teplota: </string>
+    <string name="label_target_temperature">Cílová teplota</string>
+    <string name="title_add_connection">Přidat připojení</string>
+    <string name="error_invalid_baseurl">Chybná základní URL</string>
+    <string name="menu_remove_dashboard">Smazat řídící panel</string>
+    <string name="label_time">Čas</string>
+    <string name="label_date">Datum</string>
+    <string name="menu_map">Mapa</string>
+    <string name="exception_no_chrome">Vyžaduje prohlížeč Chrome</string>
+    <string name="title_nozone">Žádná lokace nebyla detekována</string>
+    <string name="content_nozone">Vypadá to, že v HA nejsou nakonfigurovány zóny nebo sledovače zařízení.</string>
+    <string name="button_continue">Pokračovat</string>
+    <string name="please_select">Prosím vyberte</string>
+    <string name="menu_location">Odeslat polohu</string>
+
+</resources>
