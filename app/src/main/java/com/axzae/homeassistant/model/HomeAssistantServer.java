@@ -74,6 +74,10 @@ public class HomeAssistantServer {
         return password;
     }
 
+    public String getBearerHeader() {
+        return "Bearer " + password;
+    }
+
     public String getWebsocketUrl() {
         return "ws" + getBaseUrl().substring(4) + "/api/websocket";
     }

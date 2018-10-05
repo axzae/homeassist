@@ -718,7 +718,7 @@ public class MainActivity extends BaseActivity implements BottomNavigationView.O
 
                         if (mCall2 == null) {
                             showNetworkBusy();
-                            mCall2 = ServiceProvider.getRawApiService(mCurrentServer.getBaseUrl()).rawStates(mCurrentServer.getPassword());
+                            mCall2 = ServiceProvider.getRawApiService(mCurrentServer.getBaseUrl()).rawStates(mCurrentServer.getBearerHeader());
                             mCall2.enqueue(new Callback<String>() {
                                 @Override
                                 public void onResponse(@NonNull Call<String> call, @NonNull Response<String> response) {
@@ -874,7 +874,7 @@ public class MainActivity extends BaseActivity implements BottomNavigationView.O
             Log.d("YouQi", "Using HTTP");
             showNetworkBusy();
             Crashlytics.log("baseUrl: " + mCurrentServer.getBaseUrl());
-            mCall = ServiceProvider.getApiService(mCurrentServer.getBaseUrl()).callService(mCurrentServer.getPassword(), domain, service, serviceRequest);
+            mCall = ServiceProvider.getApiService(mCurrentServer.getBaseUrl()).callService(mCurrentServer.getBearerHeader(), domain, service, serviceRequest);
             mCall.enqueue(new Callback<ArrayList<Entity>>() {
                 @Override
                 public void onResponse(@NonNull Call<ArrayList<Entity>> call, @NonNull Response<ArrayList<Entity>> response) {
@@ -979,7 +979,7 @@ public class MainActivity extends BaseActivity implements BottomNavigationView.O
         protected ErrorMessage doInBackground(Void... params) {
             try {
                 publishProgress("Connecting");
-                Response<ArrayList<Entity>> response = ServiceProvider.getApiService(mCurrentServer.getBaseUrl()).getStates(mCurrentServer.getPassword()).execute();
+                Response<ArrayList<Entity>> response = ServiceProvider.getApiService(mCurrentServer.getBaseUrl()).getStates(mCurrentServer.getBearerHeader()).execute();
                 if (response.code() != 200) {
                     //OAuthToken token = new Gson().fromJson(response.errorBody().string(), OAuthToken.class);
                     return new ErrorMessage("Error", response.message());

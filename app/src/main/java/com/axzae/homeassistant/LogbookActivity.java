@@ -143,7 +143,7 @@ public class LogbookActivity extends AppCompatActivity {
 
         if (mCall == null) {
             //showNetworkBusy();
-            mCall = ServiceProvider.getApiService(mCurrentServer.getBaseUrl()).getLogbook(mCurrentServer.getPassword(), df.format(now.getTime()));
+            mCall = ServiceProvider.getApiService(mCurrentServer.getBaseUrl()).getLogbook(mCurrentServer.getBearerHeader(), df.format(now.getTime()));
             mCall.enqueue(new Callback<ArrayList<LogSheet>>() {
                 @Override
                 public void onResponse(@NonNull Call<ArrayList<LogSheet>> call, @NonNull Response<ArrayList<LogSheet>> response) {

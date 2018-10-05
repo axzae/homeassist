@@ -104,7 +104,7 @@ public class TransparentActivity extends BaseActivity implements DialogInterface
                 EntityHandlerHelper.onEntityLongClick(this, entity);
             }
 
-            Call<Entity> mCall = ServiceProvider.getApiService(mCurrentServer.getBaseUrl()).getState(mCurrentServer.getPassword(), mEntity.entityId);
+            Call<Entity> mCall = ServiceProvider.getApiService(mCurrentServer.getBaseUrl()).getState(mCurrentServer.getBearerHeader(), mEntity.entityId);
             mCall.enqueue(new Callback<Entity>() {
                 @Override
                 public void onResponse(@NonNull Call<Entity> call, @NonNull Response<Entity> response) {
@@ -151,7 +151,7 @@ public class TransparentActivity extends BaseActivity implements DialogInterface
         Log.d("YouQi", String.format(Locale.ENGLISH, "callService(%s, %s) in TransparentActivity: %s", domain, service, CommonUtil.deflate(serviceRequest)));
         if (mCall == null) {
             //showNetworkBusy();
-            mCall = ServiceProvider.getApiService(mCurrentServer.getBaseUrl()).callService(mCurrentServer.getPassword(), domain, service, serviceRequest);
+            mCall = ServiceProvider.getApiService(mCurrentServer.getBaseUrl()).callService(mCurrentServer.getBearerHeader(), domain, service, serviceRequest);
             mCall.enqueue(new Callback<ArrayList<Entity>>() {
                 @Override
                 public void onResponse(@NonNull Call<ArrayList<Entity>> call, @NonNull Response<ArrayList<Entity>> response) {

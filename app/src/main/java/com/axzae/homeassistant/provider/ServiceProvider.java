@@ -34,7 +34,7 @@ import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 public class ServiceProvider {
     private static final int CONNECTION_TIMEOUT_IN_SEC = 5;
-    private static final int DEFAULT_READ_TIMEOUT_IN_SEC = 15;
+    private static final int DEFAULT_READ_TIMEOUT_IN_SEC = 30;
     private static OkHttpClient okHttpClient;
     private static OkHttpClient wsOkHttpClient;
     private static OkHttpClient glideOkHttpClient;

@@ -174,7 +174,7 @@ public class ConnectionFragment extends DialogFragment implements View.OnClickLi
     }
 
     private void testConnection(final HomeAssistantServer connection) {
-        ServiceProvider.getRawApiService(connection.getBaseUrl()).rawStates(connection.getPassword())
+        ServiceProvider.getRawApiService(connection.getBaseUrl()).rawStates(connection.getBearerHeader())
                 .enqueue(new Callback<String>() {
                     @Override
                     public void onResponse(@NonNull Call<String> call, @NonNull Response<String> response) {

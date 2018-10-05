@@ -92,7 +92,7 @@ public class ClimateFragment extends BaseControlFragment implements View.OnClick
     public void callService() {
         if (mCall == null) {
             mProgressBar.setVisibility(View.VISIBLE);
-            mCall = ServiceProvider.getApiService(mServer.getBaseUrl()).getHistory(mServer.getPassword(), mEntity.entityId);
+            mCall = ServiceProvider.getApiService(mServer.getBaseUrl()).getHistory(mServer.getBearerHeader(), mEntity.entityId);
             mCall.enqueue(new Callback<ArrayList<ArrayList<Entity>>>() {
                 @Override
                 public void onResponse(@NonNull Call<ArrayList<ArrayList<Entity>>> call, @NonNull Response<ArrayList<ArrayList<Entity>>> response) {

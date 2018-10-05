@@ -121,7 +121,7 @@ public class EntityWidgetProvider extends AppWidgetProvider {
                 //updateEntityWidget(context, widget);
 
                 if (mCurrentServer != null) {
-                    Call<Entity> mCall = ServiceProvider.getApiService(mCurrentServer.getBaseUrl()).getState(mCurrentServer.getPassword(), widget.entityId);
+                    Call<Entity> mCall = ServiceProvider.getApiService(mCurrentServer.getBaseUrl()).getState(mCurrentServer.getBearerHeader(), widget.entityId);
                     mCall.enqueue(new Callback<Entity>() {
                         @Override
                         public void onResponse(@NonNull Call<Entity> call, @NonNull Response<Entity> response) {
