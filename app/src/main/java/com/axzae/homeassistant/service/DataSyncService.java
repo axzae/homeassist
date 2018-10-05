@@ -255,7 +255,7 @@ public class DataSyncService extends Service {
                 case "auth_required":
                     sendCommand(new JSONObject()
                             .put("type", "auth")
-                            .put("api_password", mPassword)
+                            .put("access_token", mPassword)
                             .toString());
                     break;
                 case "auth_ok":

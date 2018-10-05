@@ -242,12 +242,14 @@ public class ConnectActivity extends BaseActivity {
         private final String mUri;
         private final String mIpAddress;
         private final String mPassword;
+        private final String mBearerHeader;
         private String mBoostrapData;
 
         UserLoginTask(String uri, String ipAddress, String password) {
             mUri = uri;
             mIpAddress = ipAddress;
             mPassword = password;
+            mBearerHeader = "Bearer " + password;
 
             mIpAddressView.setEnabled(false);
             mPasswordView.setEnabled(false);
@@ -261,8 +263,8 @@ public class ConnectActivity extends BaseActivity {
             try {
                 publishProgress(getString(R.string.progress_connecting));
 
-                //Response<BootstrapResponse> response = ServiceProvider.getApiService(mUri).bootstrap(mPassword).execute();
-                Response<String> response = ServiceProvider.getRawApiService(mUri).rawStates(mPassword).execute();
+                //Response<BootstrapResponse> response = ServiceProvider.getApiService(mUri).bootstrap(mBearerHeader).execute();
+                Response<String> response = ServiceProvider.getRawApiService(mUri).rawStates(mBearerHeader).execute();
 
                 if (response.code() != 200) {
                     if (response.code() == 401) {
